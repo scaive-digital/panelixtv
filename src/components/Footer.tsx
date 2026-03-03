@@ -16,7 +16,7 @@ export default function Footer() {
                                     src="/panelix.png"
                                     alt="Panelix Logo - Garantili TV Ekran Tamiri"
                                     fill
-                                    className="object-contain object-left filter brightness-0 invert" // Automatically turns the logo white for the dark footer
+                                    className="object-contain object-left"
                                 />
                             </div>
                         </Link>
@@ -81,9 +81,19 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-200 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between text-sm text-slate-500">
+                <div className="border-t border-gray-200 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between text-sm text-slate-500 gap-4">
                     <p>© {new Date().getFullYear()} Panelix. Tüm hakları saklıdır.</p>
-                    <p className="mt-2 md:mt-0">Orijinal Panel Değişim Merkezi</p>
+                    <div className="flex items-center gap-2 mt-2 md:mt-0">
+                        <span>Designed By</span>
+                        <div className="relative w-20 h-6 inline-block opacity-80 hover:opacity-100 transition-opacity">
+                            <Image
+                                src="/scaive.png"
+                                alt="Scaive"
+                                fill
+                                className="object-contain object-center"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
