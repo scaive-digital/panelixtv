@@ -88,7 +88,7 @@ export default function ContactPage() {
                             </div>
 
                             <a
-                                href="https://share.google/B0TEVpHfjLCSoeIil"
+                                href="https://maps.app.goo.gl/tpXJqs2vLU5kFYH87"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group flex items-start gap-4 p-4 -ml-4 rounded-2xl hover:bg-slate-50 transition-colors"
@@ -107,11 +107,11 @@ export default function ContactPage() {
 
                     {/* Map */}
                     <div className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden h-full min-h-[400px] relative group">
-                        <a href="https://share.google/B0TEVpHfjLCSoeIil" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
+                        <a href="https://maps.app.goo.gl/tpXJqs2vLU5kFYH87" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
                             <span className="bg-white text-slate-900 font-bold px-6 py-3 rounded-full shadow-xl">Google Haritalar'da Aç</span>
                         </a>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6067035651543!2d28.875691476536066!3d40.99009082054236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabc0b000a3be1%3A0x6b63fce9f0e1cf0a!2sBak%C4%B1rk%C3%B6y%20Led%20Tv%20Uydu%20Teknik%20Servis!5e0!3m2!1str!2str!4v1709462719225!5m2!1str!2str"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.3968252273016!2d28.87524997653523!3d40.9782558206801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabc0b000a3be1%3A0x6b63fce9f0e1cf0a!2sBak%C4%B1rk%C3%B6y%20Led%20Tv%20Uydu%20Teknik%20Servis%20Televizyon%20Tamir%20Servisi!5e0!3m2!1str!2str!4v1709462719225!5m2!1str!2str"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}

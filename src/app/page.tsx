@@ -205,7 +205,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card 1 */}
             <Link href="/hizmetler/kirik-ekran-tamiri" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
               <div className="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mb-6">
@@ -248,6 +248,28 @@ export default function Home() {
               <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">LED Değişimi</h3>
               <p className="text-slate-600 leading-relaxed">
                 Sadece panel değil, LED değişimi de atölyemizde özenle yapılmaktadır. LED reflektörü ile tamir edilmesi gereken cihazlar, bu profesyonel prosedüre uygun şekilde, <strong className="text-brand-blue">özel reflektör kullanılarak</strong> onarılmaktadır.
+              </p>
+            </Link>
+
+            {/* Card 5 - New */}
+            <Link href="/hizmetler/tv-panel-degisimi" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-orange-50 flex items-center justify-center mb-6">
+                <ShieldCheck className="w-7 h-7 text-orange-500" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Orijinal Panel Değişimi</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Arızalı, ömrünü yitirmiş veya onarılamayacak kadar hasar görmüş televizyon ekranları için birebir orijinal ve garantili panel değişim hizmeti sunuyoruz.
+              </p>
+            </Link>
+
+            {/* Card 6 - New */}
+            <Link href="/hizmetler/anakart-tamiri" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-teal-50 flex items-center justify-center mb-6">
+                <Wrench className="w-7 h-7 text-teal-500" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Anakart & Besleme Tamiri</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Televizyon hiç açılmıyor mu? Işık yanıp sönüyor mu? Güç kartı (besleme) ve anakart (mainboard) arızalarını laboratuvar ortamında mikroskobik düzeyde tamir ediyoruz.
               </p>
             </Link>
           </div>
