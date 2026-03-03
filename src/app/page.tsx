@@ -167,31 +167,31 @@ export default function Home() {
         <div className="flex w-[200%] md:w-full overflow-hidden group/marquee">
           <div className="flex animate-[marquee_120s_linear_infinite] group-hover/marquee:[animation-play-state:paused] whitespace-nowrap gap-6 px-3 items-stretch">
             {reviews.map((review, i) => (
-              <a key={`m1-${i}`} href={review.link} target="_blank" rel="noopener noreferrer" className="flex flex-col gap-3 bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:bg-slate-700/80 transition-colors cursor-pointer group w-[320px] shrink-0 whitespace-normal">
+              <div key={`m1-${i}`} className="flex flex-col gap-3 bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:bg-slate-700/80 transition-colors cursor-default group w-[320px] shrink-0 whitespace-normal">
                 <div className="flex text-amber-400 text-lg">
                   <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 </div>
                 <p className="text-slate-200 font-medium text-sm leading-relaxed italic line-clamp-4">"{review.text}"</p>
                 <div className="mt-auto pt-4 border-t border-slate-700/50 flex justify-between items-center">
-                  <span className="text-slate-400 font-semibold text-xs uppercase tracking-wider group-hover:text-blue-400 transition-colors">{review.author}</span>
+                  <span className="text-slate-400 font-semibold text-xs uppercase tracking-wider transition-colors">{review.author}</span>
                   <span className="text-brand-blue/50 text-xs">Google Yorumu</span>
                 </div>
-              </a>
+              </div>
             ))}
           </div>
           {/* Duplicate for seamless looping */}
           <div className="flex animate-[marquee_120s_linear_infinite] group-hover/marquee:[animation-play-state:paused] whitespace-nowrap gap-6 px-3 items-stretch" aria-hidden="true">
             {reviews.map((review, i) => (
-              <a key={`m2-${i}`} href={review.link} target="_blank" rel="noopener noreferrer" className="flex flex-col gap-3 bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:bg-slate-700/80 transition-colors cursor-pointer group w-[320px] shrink-0 whitespace-normal">
+              <div key={`m2-${i}`} className="flex flex-col gap-3 bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:bg-slate-700/80 transition-colors cursor-default group w-[320px] shrink-0 whitespace-normal">
                 <div className="flex text-amber-400 text-lg">
                   <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 </div>
                 <p className="text-slate-200 font-medium text-sm leading-relaxed italic line-clamp-4">"{review.text}"</p>
                 <div className="mt-auto pt-4 border-t border-slate-700/50 flex justify-between items-center">
-                  <span className="text-slate-400 font-semibold text-xs uppercase tracking-wider group-hover:text-blue-400 transition-colors">{review.author}</span>
+                  <span className="text-slate-400 font-semibold text-xs uppercase tracking-wider transition-colors">{review.author}</span>
                   <span className="text-brand-blue/50 text-xs">Google Yorumu</span>
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         </div>
