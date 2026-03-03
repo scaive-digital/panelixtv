@@ -2,6 +2,89 @@ import Image from "next/image";
 import Link from "next/link";
 import { PhoneCall, ShieldCheck, Wrench, Clock, MonitorPlay, Zap, Droplets, Grid } from "lucide-react";
 
+const reviews = [
+  {
+    author: "erdi yaygun",
+    text: "Herşey çok iyiydi. İlk iletişime geçtiğim andan ürün yapılıp tekrar elime gelene kadar en ufak bir sorun yaşamadım. Televizyonum tamirdeyken yerine iyi bir tv bıraktı sağolsun. İletişimde şeffaf, işinde iyi artık herkese gönül rahatlığıyla önereceğim bir yer.",
+    link: "https://share.google/aalYzl5XiivwzeD00"
+  },
+  {
+    author: "Onur Dindaroğlu",
+    text: "Çok ilgili ve güler yüzlü insanlar. Tam zamanında geliyorlar ve işlerini tam anlamıyla biliyorlar. Kesinlikle herkese tavsiye ederim.",
+    link: "https://share.google/NSVOK4MePnis6xr7U"
+  },
+  {
+    author: "özay bektaş",
+    text: "Mustafa çalışkanöztütk beye gerekten çok Teşekürler tvdeki arızamı en kısa sürede onarıp Teslim etti bundan sonra güvenle çalışacağım bir servis buldum ellerine sağlık tekrardan 🙏",
+    link: "https://share.google/sV11wf0FCHizDwope"
+  },
+  {
+    author: "Ceyhun ertural",
+    text: "İlgi ve alakaları için teşekkür ederim. Kısa sürede arızayı çözüp tamir ettiler ve mağduriyet yaşamayalım diye konsinye Tv de verdiler tamir süresi boyunca",
+    link: "https://share.google/6URYXzMdm8u9e8XxN"
+  },
+  {
+    author: "MrKaraburc",
+    text: "cok profesyonel. bu devirde istanbulda işini ehliyle yapan birilerini bulmak cok zor. hem fahiş fiyat verip hem baştan savma is yapanlardan cok daha uyguna ve kaliteli bir hizmet aldim.",
+    link: "https://share.google/VhCR0O9BP6eU1Keuh"
+  },
+  {
+    author: "Kerem Baş",
+    text: "Öncelikle güler yüzlü temiz dürüst ve ilgili olması önceliğinin para degil hizmet ve iletişime odaklanması doğru tercih yaptığımızın vermiş olduğu huzur ve güven hissi tekrardan emeklerine sağlık çok teşekkür ederiz.",
+    link: "https://share.google/8cWE8oayQyjkrKMIr"
+  },
+  {
+    author: "rıdvan öz",
+    text: "Televizyonum hızlı bir şekilde yapılıp teslim edildi. En ufak bir problem yaşamadım. Mustafa’ya çok teşekkürler",
+    link: "https://share.google/ixEIOlllRh97mzPxj"
+  },
+  {
+    author: "Uğur Önal",
+    text: "Samsung 65inch Qled tvmizin ledlerindeki arizayi kısa surede en uygun fiyata çöźdüler.Cok memnun kaldım hizmetlerinden kesinlikle tavsiyeder",
+    link: "https://share.google/zdVmXRSNLlr0wc5vh"
+  },
+  {
+    author: "Kemal Bostancioglu",
+    text: "Son derece profesyonel bir işletme. Televizyon tamiri sürecinde evden teslim aldılar ve güzel bir Tv bıraktılar. Düzgün ve çalışkan bir ekip",
+    link: "https://share.google/yMEnamA4NfvrnMbWk"
+  },
+  {
+    author: "ebru ertural",
+    text: "mustafa kardeşime çok teşekkür ederim ❤ daha önce çok yerden hizmet aldım ama böylesini ilk defa gördüm diyebilirim. ledlerim değişecekti televizyonu geldi aldı ve gelirken de madur olmayalım diye bizlere geçici televizyon getirdi eline",
+    link: "https://share.google/yK8y6gV9opZqGsGwz"
+  },
+  {
+    author: "Seda karagöz",
+    text: "Aldığımız hizmeti layığıyla yerine getirdiği ve mağdur durumda bırakmamak adına geçici TV bırakması 10/10 Luk hizmet ,ciddi anlamda sonuna kadar güven veren bir hizmet daha önce karşılaşmadım ,kendilerine çok teşekkür ederiz☺️",
+    link: "https://share.google/duVRY4hB3xW1gd6xS"
+  },
+  {
+    author: "kutluhan önal",
+    text: "Fiyat avantajı yanısıra, tamir sürecinde eve TV bırakması, evden TV alması uygun fiyatı ve sözüne uygun hareket etmesi işine olan saygısı nedeniyle tavsiye ediyorum",
+    link: "https://share.google/3mwpqPJEaFhhTHq8P"
+  },
+  {
+    author: "gökmen",
+    text: "Kırılan Tv ekranını tamir edilmesi için birkaç hizmet noktası ile görüştüğümde burda yapılan olumlu yorumlar tercih sebebim oldu. Furkan elektrik nezdinde Mustafa ve kardeşine çok teşekkür ederim. Anında müdahale ederek üstün hizmet anlayışlarını ortaya koydular.",
+    link: "https://share.google/7wn60acjecSYOeQvY"
+  },
+  {
+    author: "Güray Erkan",
+    text: "Öncelikle hiç tereddüt etmeden güvenebilirsiniz. servisten aldığız fiyatin üçte birine çok kaliteli hizmet aldık. 65 inc Televizyonu alıp teslim ederlerken kutulu ve köpüklü tv kutusunda getirip götürdüler, hicbir sekilde zarar görmedi.",
+    link: "https://share.google/UsdvN6EBrb9QV9qQ8"
+  },
+  {
+    author: "Meryem Albayrak",
+    text: "Televizyonumuzda reflektör arızası vardı. Bizimle harika bir iletişim kurdu. Ne olduğunu ne yapılacağını anlattı. 2 gün içinde tvmizi tamir edip getirdi. Tvmiz tamirdeyken bize televizyon bıraktı zorluk çekmeyelim diye. Herkese gönülden tavsiye ederim. Bereketli kazançlarınız olsun.",
+    link: "https://share.google/mTxPbsFuamFqkcYPi"
+  },
+  {
+    author: "vedat deniz",
+    text: "TV'mdeki LED arızası nedeniyle başvurduğum bu firmadan aldığım hizmetten son derece memnun kaldım. Arızalı TV’mi evimden alıp, yerine geçici olarak kullanmam için televizyon getirdiler. Bu kadar düşünceli ve çözüm odaklı bir hizmet",
+    link: "https://share.google/UkyKr0FqZk2HJc5XP"
+  }
+];
+
 export default function Home() {
   const whatsappUrl = "https://wa.me/905350577188?text=Merhaba,%20TV%20panel%20değişimi%20hakkında%20bilgi%20ve%20fiyat%20almak%20istiyorum.";
 
@@ -82,29 +165,29 @@ export default function Home() {
       {/* Customer Reviews Marquee */}
       <section className="bg-slate-900 py-6 overflow-hidden border-y border-slate-800">
         <div className="flex w-[200%] md:w-full overflow-hidden">
-          <div className="flex animate-[marquee_20s_linear_infinite] whitespace-nowrap gap-12 px-6 items-center">
-            {[...Array(6)].map((_, i) => (
-              <a key={`m1-${i}`} href="https://share.google/aalYzl5XiivwzeD00" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50 hover:bg-slate-700/50 transition-colors cursor-pointer group">
+          <div className="flex animate-[marquee_40s_linear_infinite] whitespace-nowrap gap-12 px-6 items-center">
+            {reviews.map((review, i) => (
+              <a key={`m1-${i}`} href={review.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50 hover:bg-slate-700/50 transition-colors cursor-pointer group min-w-max">
                 <div className="flex text-amber-400 text-lg">
                   <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-slate-200 font-medium tracking-wide">"Herşey çok iyiydi. İlk iletişime geçtiğim andan ürün..."</span>
-                  <span className="text-slate-400 text-xs italic group-hover:text-blue-400">erdi yaygun</span>
+                  <span className="text-slate-200 font-medium tracking-wide">"{review.text}"</span>
+                  <span className="text-slate-400 text-xs italic group-hover:text-blue-400">{review.author}</span>
                 </div>
               </a>
             ))}
           </div>
           {/* Duplicate for seamless looping */}
-          <div className="flex animate-[marquee_20s_linear_infinite] whitespace-nowrap gap-12 px-6 items-center" aria-hidden="true">
-            {[...Array(6)].map((_, i) => (
-              <a key={`m2-${i}`} href="https://share.google/aalYzl5XiivwzeD00" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50 hover:bg-slate-700/50 transition-colors cursor-pointer group">
+          <div className="flex animate-[marquee_40s_linear_infinite] whitespace-nowrap gap-12 px-6 items-center" aria-hidden="true">
+            {reviews.map((review, i) => (
+              <a key={`m2-${i}`} href={review.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50 hover:bg-slate-700/50 transition-colors cursor-pointer group min-w-max">
                 <div className="flex text-amber-400 text-lg">
                   <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-slate-200 font-medium tracking-wide">"Herşey çok iyiydi. İlk iletişime geçtiğim andan ürün..."</span>
-                  <span className="text-slate-400 text-xs italic group-hover:text-blue-400">erdi yaygun</span>
+                  <span className="text-slate-200 font-medium tracking-wide">"{review.text}"</span>
+                  <span className="text-slate-400 text-xs italic group-hover:text-blue-400">{review.author}</span>
                 </div>
               </a>
             ))}
