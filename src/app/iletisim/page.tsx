@@ -111,7 +111,7 @@ export default function ContactPage() {
                             <span className="bg-white text-slate-900 font-bold px-6 py-3 rounded-full shadow-xl">Google Haritalar'da Aç</span>
                         </a>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192697.79421272!2d28.87175402035!3d41.0054958092289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6067035651543!2d28.875691476536066!3d40.99009082054236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabc0b000a3be1%3A0x6b63fce9f0e1cf0a!2sBak%C4%B1rk%C3%B6y%20Led%20Tv%20Uydu%20Teknik%20Servis!5e0!3m2!1str!2str!4v1709462719225!5m2!1str!2str"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}
