@@ -72,10 +72,7 @@ export default function Footer() {
                                 <Phone className="h-5 w-5 text-brand-blue shrink-0 mt-0.5" />
                                 <span>+90 535 057 71 88</span>
                             </li>
-                            <li className="flex items-start gap-3 text-slate-600">
-                                <Mail className="h-5 w-5 text-brand-blue shrink-0 mt-0.5" />
-                                <span>info@panelix.com</span>
-                            </li>
+
                             <li className="flex items-start gap-3 text-slate-600">
                                 <MapPin className="h-5 w-5 text-brand-blue shrink-0 mt-0.5" />
                                 <span>Merkez Ofis, İstanbul</span>
