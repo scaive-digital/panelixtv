@@ -26,8 +26,8 @@ export default function Navbar() {
             TV Modelleri
           </Link>
           <div className="relative group py-2">
-            <span className="cursor-pointer text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors uppercase tracking-wider">
-              HİZMETLERİMİZ
+            <span className="cursor-pointer text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors">
+              Hizmetlerimiz
             </span>
             <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[260px] bg-white rounded-xl shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
               <div className="p-2 flex flex-col gap-1">
