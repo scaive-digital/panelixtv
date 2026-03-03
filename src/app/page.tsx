@@ -163,31 +163,33 @@ export default function Home() {
       </section>
 
       {/* Customer Reviews Marquee */}
-      <section className="bg-slate-900 py-6 overflow-hidden border-y border-slate-800">
-        <div className="flex w-[200%] md:w-full overflow-hidden">
-          <div className="flex animate-[marquee_40s_linear_infinite] whitespace-nowrap gap-12 px-6 items-center">
+      <section className="bg-slate-900 py-10 overflow-hidden border-y border-slate-800">
+        <div className="flex w-[200%] md:w-full overflow-hidden group/marquee">
+          <div className="flex animate-[marquee_120s_linear_infinite] group-hover/marquee:[animation-play-state:paused] whitespace-nowrap gap-6 px-3 items-stretch">
             {reviews.map((review, i) => (
-              <a key={`m1-${i}`} href={review.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50 hover:bg-slate-700/50 transition-colors cursor-pointer group min-w-max">
+              <a key={`m1-${i}`} href={review.link} target="_blank" rel="noopener noreferrer" className="flex flex-col gap-3 bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:bg-slate-700/80 transition-colors cursor-pointer group w-[320px] shrink-0 whitespace-normal">
                 <div className="flex text-amber-400 text-lg">
                   <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-slate-200 font-medium tracking-wide">"{review.text}"</span>
-                  <span className="text-slate-400 text-xs italic group-hover:text-blue-400">{review.author}</span>
+                <p className="text-slate-200 font-medium text-sm leading-relaxed italic line-clamp-4">"{review.text}"</p>
+                <div className="mt-auto pt-4 border-t border-slate-700/50 flex justify-between items-center">
+                  <span className="text-slate-400 font-semibold text-xs uppercase tracking-wider group-hover:text-blue-400 transition-colors">{review.author}</span>
+                  <span className="text-brand-blue/50 text-xs">Google Yorumu</span>
                 </div>
               </a>
             ))}
           </div>
           {/* Duplicate for seamless looping */}
-          <div className="flex animate-[marquee_40s_linear_infinite] whitespace-nowrap gap-12 px-6 items-center" aria-hidden="true">
+          <div className="flex animate-[marquee_120s_linear_infinite] group-hover/marquee:[animation-play-state:paused] whitespace-nowrap gap-6 px-3 items-stretch" aria-hidden="true">
             {reviews.map((review, i) => (
-              <a key={`m2-${i}`} href={review.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50 hover:bg-slate-700/50 transition-colors cursor-pointer group min-w-max">
+              <a key={`m2-${i}`} href={review.link} target="_blank" rel="noopener noreferrer" className="flex flex-col gap-3 bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:bg-slate-700/80 transition-colors cursor-pointer group w-[320px] shrink-0 whitespace-normal">
                 <div className="flex text-amber-400 text-lg">
                   <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-slate-200 font-medium tracking-wide">"{review.text}"</span>
-                  <span className="text-slate-400 text-xs italic group-hover:text-blue-400">{review.author}</span>
+                <p className="text-slate-200 font-medium text-sm leading-relaxed italic line-clamp-4">"{review.text}"</p>
+                <div className="mt-auto pt-4 border-t border-slate-700/50 flex justify-between items-center">
+                  <span className="text-slate-400 font-semibold text-xs uppercase tracking-wider group-hover:text-blue-400 transition-colors">{review.author}</span>
+                  <span className="text-brand-blue/50 text-xs">Google Yorumu</span>
                 </div>
               </a>
             ))}
