@@ -522,102 +522,6 @@ export const tvModels: TvModel[] = [
     "resolution": "8K"
   },
   {
-    "id": "sam-65",
-    "brand": "Samsung",
-    "modelCode": "55S90C",
-    "screenSize": "55",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "sam-66",
-    "brand": "Samsung",
-    "modelCode": "55S95C",
-    "screenSize": "55",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "sam-67",
-    "brand": "Samsung",
-    "modelCode": "55S95D",
-    "screenSize": "55",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "sam-68",
-    "brand": "Samsung",
-    "modelCode": "65S90C",
-    "screenSize": "65",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "sam-69",
-    "brand": "Samsung",
-    "modelCode": "65S95C",
-    "screenSize": "65",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "sam-70",
-    "brand": "Samsung",
-    "modelCode": "65S95D",
-    "screenSize": "65",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "sam-71",
-    "brand": "Samsung",
-    "modelCode": "77S90C",
-    "screenSize": "77",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "sam-72",
-    "brand": "Samsung",
-    "modelCode": "77S95C",
-    "screenSize": "77",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "sam-73",
-    "brand": "Samsung",
-    "modelCode": "77S95D",
-    "screenSize": "77",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "sam-74",
-    "brand": "Samsung",
-    "modelCode": "83S90C",
-    "screenSize": "83",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "sam-75",
-    "brand": "Samsung",
-    "modelCode": "83S95C",
-    "screenSize": "83",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "sam-76",
-    "brand": "Samsung",
-    "modelCode": "83S95D",
-    "screenSize": "83",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
     "id": "lg-77",
     "brand": "LG",
     "modelCode": "43UR80006LJ",
@@ -903,198 +807,6 @@ export const tvModels: TvModel[] = [
     "modelCode": "86QNED866QA",
     "screenSize": "86",
     "panelType": "QNED",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-113",
-    "brand": "LG",
-    "modelCode": "OLED42C34LA",
-    "screenSize": "42",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-114",
-    "brand": "LG",
-    "modelCode": "OLED42C44LA",
-    "screenSize": "42",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-115",
-    "brand": "LG",
-    "modelCode": "OLED48C34LA",
-    "screenSize": "48",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-116",
-    "brand": "LG",
-    "modelCode": "OLED48C44LA",
-    "screenSize": "48",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-117",
-    "brand": "LG",
-    "modelCode": "OLED55C34LA",
-    "screenSize": "55",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-118",
-    "brand": "LG",
-    "modelCode": "OLED55C44LA",
-    "screenSize": "55",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-119",
-    "brand": "LG",
-    "modelCode": "OLED55G36LA",
-    "screenSize": "55",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-120",
-    "brand": "LG",
-    "modelCode": "OLED55G46LA",
-    "screenSize": "55",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-121",
-    "brand": "LG",
-    "modelCode": "OLED55B36LA",
-    "screenSize": "55",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-122",
-    "brand": "LG",
-    "modelCode": "OLED65C34LA",
-    "screenSize": "65",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-123",
-    "brand": "LG",
-    "modelCode": "OLED65C44LA",
-    "screenSize": "65",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-124",
-    "brand": "LG",
-    "modelCode": "OLED65G36LA",
-    "screenSize": "65",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-125",
-    "brand": "LG",
-    "modelCode": "OLED65G46LA",
-    "screenSize": "65",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-126",
-    "brand": "LG",
-    "modelCode": "OLED65B36LA",
-    "screenSize": "65",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-127",
-    "brand": "LG",
-    "modelCode": "OLED77C34LA",
-    "screenSize": "77",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-128",
-    "brand": "LG",
-    "modelCode": "OLED77C44LA",
-    "screenSize": "77",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-129",
-    "brand": "LG",
-    "modelCode": "OLED77G36LA",
-    "screenSize": "77",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-130",
-    "brand": "LG",
-    "modelCode": "OLED77G46LA",
-    "screenSize": "77",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-131",
-    "brand": "LG",
-    "modelCode": "OLED77B36LA",
-    "screenSize": "77",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-132",
-    "brand": "LG",
-    "modelCode": "OLED83C34LA",
-    "screenSize": "83",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-133",
-    "brand": "LG",
-    "modelCode": "OLED83C44LA",
-    "screenSize": "83",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-134",
-    "brand": "LG",
-    "modelCode": "OLED83G36LA",
-    "screenSize": "83",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-135",
-    "brand": "LG",
-    "modelCode": "OLED83G46LA",
-    "screenSize": "83",
-    "panelType": "OLED evo",
-    "resolution": "4K"
-  },
-  {
-    "id": "lg-136",
-    "brand": "LG",
-    "modelCode": "OLED83B36LA",
-    "screenSize": "83",
-    "panelType": "OLED",
     "resolution": "4K"
   },
   {
@@ -1618,27 +1330,11 @@ export const tvModels: TvModel[] = [
     "resolution": "4K"
   },
   {
-    "id": "son-202",
-    "brand": "Sony",
-    "modelCode": "XR-55A80L",
-    "screenSize": "55",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
     "id": "son-203",
     "brand": "Sony",
     "modelCode": "XR-55A95L",
     "screenSize": "55",
     "panelType": "QD-OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "son-204",
-    "brand": "Sony",
-    "modelCode": "XR-65A80L",
-    "screenSize": "65",
-    "panelType": "OLED",
     "resolution": "4K"
   },
   {
@@ -1650,27 +1346,11 @@ export const tvModels: TvModel[] = [
     "resolution": "4K"
   },
   {
-    "id": "son-206",
-    "brand": "Sony",
-    "modelCode": "XR-77A80L",
-    "screenSize": "77",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
     "id": "son-207",
     "brand": "Sony",
     "modelCode": "XR-77A95L",
     "screenSize": "77",
     "panelType": "QD-OLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "son-208",
-    "brand": "Sony",
-    "modelCode": "XR-83A80L",
-    "screenSize": "83",
-    "panelType": "OLED",
     "resolution": "4K"
   },
   {
@@ -1866,14 +1546,6 @@ export const tvModels: TvModel[] = [
     "resolution": "4K"
   },
   {
-    "id": "ves-233",
-    "brand": "Vestel",
-    "modelCode": "65OLED9900",
-    "screenSize": "65",
-    "panelType": "OLED",
-    "resolution": "4K"
-  },
-  {
     "id": "reg-234",
     "brand": "Regal",
     "modelCode": "65R653F",
@@ -1919,14 +1591,6 @@ export const tvModels: TvModel[] = [
     "modelCode": "75QA9700",
     "screenSize": "75",
     "panelType": "QLED",
-    "resolution": "4K"
-  },
-  {
-    "id": "ves-240",
-    "brand": "Vestel",
-    "modelCode": "75OLED9900",
-    "screenSize": "75",
-    "panelType": "OLED",
     "resolution": "4K"
   },
   {

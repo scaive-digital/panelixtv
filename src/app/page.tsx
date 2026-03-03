@@ -29,9 +29,9 @@ export default function Home() {
                   <MonitorPlay className="w-6 h-6 text-amber-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-amber-900 text-lg">Konsantrasyonunuz Bozulmasın: Emanet TV Hizmeti!</h4>
+                  <h4 className="font-bold text-amber-900 text-lg">Konsantrasyonunuz Bozulmasın: İkame TV Hizmeti!</h4>
                   <p className="text-amber-800 text-sm mt-1">
-                    Televizyonunuzu atölyemize alırken, onarım süreci boyunca mağdur olmamanız için size <strong>ücretsiz geçici bir televizyon (Emanet TV)</strong> bırakıyoruz. Kendi televizyonunuz orijinal paneliyle onarılıp teslim edildiğinde, emanet cihazımızı geri teslim alıyoruz. Eğlenceniz asla yarım kalmaz!
+                    Televizyonunuzu atölyemize alırken, onarım süreci boyunca mağdur olmamanız için size <strong>ücretsiz geçici bir televizyon (İkame TV)</strong> bırakıyoruz. Kendi televizyonunuz orijinal paneliyle onarılıp teslim edildiğinde, ikame cihazımızı geri teslim alıyoruz. Eğlenceniz asla yarım kalmaz!
                   </p>
                 </div>
               </div>
@@ -47,14 +47,14 @@ export default function Home() {
                   WhatsApp'tan Anında Fiyat Al
                 </a>
               </div>
-              <div className="mt-8 flex items-center gap-6 text-sm font-medium text-slate-500">
+              <div className="mt-8 flex flex-wrap items-center gap-6 text-sm font-medium text-slate-500">
                 <div className="flex items-center gap-2">
                   <Clock className="w-5 h-5 text-green-500" />
-                  <span>5 Dakikada Fiyat Teklifi</span>
+                  <span>Saniyeler İçinde WhatsApp Üzerinden Fiyat Teklifi</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-5 h-5 text-blue-500" />
-                  <span>1 Yıl Garanti</span>
+                  <span>%100 Garantili Orijinal Onarım</span>
                 </div>
               </div>
             </div>
@@ -62,8 +62,8 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-100 to-transparent rounded-3xl transform translate-x-4 translate-y-4 -z-10"></div>
               <div className="relative h-[400px] lg:h-[600px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 <Image
-                  src="/broken_tv.jpg"
-                  alt="Kırık Ekranlı TV Panel Onarımı"
+                  src="/new_generation_broken_tv.png"
+                  alt="Yeni Nesil Kırık Ekranlı TV"
                   fill
                   className="object-cover"
                   priority
@@ -71,10 +71,37 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/20 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 text-white">
                   <div className="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded inline-block mb-2 uppercase tracking-wide">Kırık Panel Tespiti</div>
-                  <p className="font-medium opacity-90 text-sm md:text-base">Görseldeki gibi içten kırık (mürekkep akması) olan ekranlar, laboratuvarımızda %100 orijinal yenisi ile değiştirilmektedir.</p>
+                  <p className="font-medium opacity-90 text-sm md:text-base">Görseldeki gibi içten kırık (mürekkep akması) olan ekranlar, atölyemizde %100 orijinal yenisi ile değiştirilmektedir.</p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Reviews Marquee */}
+      <section className="bg-slate-900 py-6 overflow-hidden border-y border-slate-800">
+        <div className="flex w-[200%] md:w-full overflow-hidden">
+          <div className="flex animate-[marquee_20s_linear_infinite] whitespace-nowrap gap-12 px-6 items-center">
+            {[...Array(6)].map((_, i) => (
+              <div key={`m1-${i}`} className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50">
+                <div className="flex text-amber-400 text-lg">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <span className="text-slate-200 font-medium tracking-wide">"Çok hızlı ve güvenilir hizmet, İkame TV harika bir detay!"</span>
+              </div>
+            ))}
+          </div>
+          {/* Duplicate for seamless looping */}
+          <div className="flex animate-[marquee_20s_linear_infinite] whitespace-nowrap gap-12 px-6 items-center" aria-hidden="true">
+            {[...Array(6)].map((_, i) => (
+              <div key={`m2-${i}`} className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50">
+                <div className="flex text-amber-400 text-lg">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <span className="text-slate-200 font-medium tracking-wide">"Çok hızlı ve güvenilir hizmet, İkame TV harika bir detay!"</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -83,15 +110,15 @@ export default function Home() {
       <section className="py-20 lg:py-28 bg-slate-50">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Hangi Ekran Arızalarını Onarıyoruz?</h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-brand-blue mb-6 tracking-tight">Hizmetlerimiz</h2>
             <p className="text-lg text-slate-600">
               Televizyon ekranlarında karşılaşılan en yaygın donanımsal arızalara kesin ve garantili çözümler sunuyoruz. Ekranı değiştirmek, yeni TV almaktan çok daha ekonomiktir.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {/* Card 1 */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
               <div className="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mb-6">
                 <Zap className="w-7 h-7 text-red-500" />
               </div>
@@ -102,7 +129,7 @@ export default function Home() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
               <div className="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6">
                 <Droplets className="w-7 h-7 text-brand-blue" />
               </div>
@@ -113,13 +140,25 @@ export default function Home() {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
               <div className="w-14 h-14 rounded-xl bg-purple-50 flex items-center justify-center mb-6">
                 <Grid className="w-7 h-7 text-purple-500" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Dikey & Yatay Çizgiler</h3>
               <p className="text-slate-600 leading-relaxed">
                 Ekranda aniden beliren renkli dikey çizgiler, yatay bantlar veya görüntünün ikiye bölünmesi gibi matris arızaları için yüksek kesinlikte tespit yapıyor ve orijinal parça ile garantili değiştiriyoruz.
+              </p>
+            </div>
+
+            {/* Card 4 - New */}
+            <div className="relative overflow-hidden bg-gradient-to-br from-white to-blue-50/50 p-8 rounded-2xl shadow-sm border border-blue-100 hover:shadow-md hover:border-brand-blue/50 transition-all duration-300 group">
+              <div className="absolute top-0 right-0 bg-brand-blue text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">En İyi Özelliğimiz</div>
+              <div className="w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <MonitorPlay className="w-7 h-7 text-green-500" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">LED Değişimi</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Sadece panel değil, LED değişimi de atölyemizde özenle yapılmaktadır. LED reflektörü ile tamir edilmesi gereken cihazlar, bu profesyonel prosedüre uygun şekilde, <strong className="text-brand-blue">özel reflektör kullanılarak</strong> onarılmaktadır.
               </p>
             </div>
           </div>

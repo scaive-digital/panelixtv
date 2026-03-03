@@ -86,11 +86,30 @@ export default function ContactPage() {
                                     <a href="mailto:info@panelix.com" className="text-lg font-medium text-slate-900 hover:text-brand-blue transition-colors">info@panelix.com</a>
                                 </div>
                             </div>
+
+                            <a
+                                href="https://share.google/B0TEVpHfjLCSoeIil"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-start gap-4 p-4 -ml-4 rounded-2xl hover:bg-slate-50 transition-colors"
+                            >
+                                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0 group-hover:bg-brand-blue transition-colors">
+                                    <svg className="w-6 h-6 text-brand-blue group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                </div>
+                                <div>
+                                    <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-1">Atölye Adresimiz (Haritada Gör)</h3>
+                                    <p className="text-lg font-medium text-slate-900 group-hover:text-brand-blue transition-colors">Panelix Merkez Atölyesi</p>
+                                    <p className="text-sm text-slate-500 mt-1">Yol tarifi almak için tıklayın</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
                     {/* Map */}
-                    <div className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden h-full min-h-[400px]">
+                    <div className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden h-full min-h-[400px] relative group">
+                        <a href="https://share.google/B0TEVpHfjLCSoeIil" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
+                            <span className="bg-white text-slate-900 font-bold px-6 py-3 rounded-full shadow-xl">Google Haritalar'da Aç</span>
+                        </a>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192697.79421272!2d28.87175402035!3d41.0054958092289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
                             width="100%"
@@ -99,7 +118,7 @@ export default function ContactPage() {
                             allowFullScreen={false}
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                            className="grayscale-[0.3] hover:grayscale-0 transition-all duration-500"
+                            className="grayscale-[0.3] group-hover:grayscale-0 transition-all duration-500"
                             title="Panelix Merkez Konum"
                         ></iframe>
                     </div>
