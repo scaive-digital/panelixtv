@@ -85,7 +85,7 @@ export default function Footer() {
                     <p>© {new Date().getFullYear()} Panelix. Tüm hakları saklıdır.</p>
                     <div className="flex items-center gap-1 mt-2 md:mt-0">
                         <span className="whitespace-nowrap">Designed By</span>
-                        <div className="relative w-48 h-12 inline-block opacity-80 hover:opacity-100 transition-opacity">
+                        <div className="relative w-96 h-24 inline-block opacity-80 hover:opacity-100 transition-opacity">
                             <Image
                                 src="/scaive.png"
                                 alt="Scaive"
