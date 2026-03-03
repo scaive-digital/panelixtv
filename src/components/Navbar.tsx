@@ -19,15 +19,15 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden md:flex gap-6 lg:gap-8 items-center">
-          <Link href="/" className="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">
+          <Link href="/" className="text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors">
             Ana Sayfa
           </Link>
-          <Link href="/tv-modelleri" className="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">
+          <Link href="/tv-modelleri" className="text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors">
             TV Modelleri
           </Link>
           <div className="relative group py-2">
-            <span className="cursor-pointer text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors uppercase tracking-wider">
-              Hizmetlerimiz
+            <span className="cursor-pointer text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors uppercase tracking-wider">
+              HİZMETLERİMİZ
             </span>
             <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[260px] bg-white rounded-xl shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
               <div className="p-2 flex flex-col gap-1">
@@ -51,7 +51,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className="relative group py-2">
-            <span className="cursor-pointer text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">
+            <span className="cursor-pointer text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors">
               Markalar
             </span>
             <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-48 bg-white rounded-xl shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
@@ -68,7 +68,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <Link href="/iletisim" className="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">
+          <Link href="/iletisim" className="text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors">
             İletişim
           </Link>
         </nav>

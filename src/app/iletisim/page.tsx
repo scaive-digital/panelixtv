@@ -77,16 +77,6 @@ export default function ContactPage() {
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center shrink-0">
-                                    <Mail className="w-6 h-6 text-slate-600" />
-                                </div>
-                                <div>
-                                    <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-1">E-Posta Desteği</h3>
-                                    <a href="mailto:info@panelix.com" className="text-lg font-medium text-slate-900 hover:text-brand-blue transition-colors">info@panelix.com</a>
-                                </div>
-                            </div>
-
                             <a
                                 href="https://maps.app.goo.gl/tpXJqs2vLU5kFYH87"
                                 target="_blank"
