@@ -84,23 +84,29 @@ export default function Home() {
         <div className="flex w-[200%] md:w-full overflow-hidden">
           <div className="flex animate-[marquee_20s_linear_infinite] whitespace-nowrap gap-12 px-6 items-center">
             {[...Array(6)].map((_, i) => (
-              <div key={`m1-${i}`} className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50">
+              <a key={`m1-${i}`} href="https://share.google/aalYzl5XiivwzeD00" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50 hover:bg-slate-700/50 transition-colors cursor-pointer group">
                 <div className="flex text-amber-400 text-lg">
                   <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 </div>
-                <span className="text-slate-200 font-medium tracking-wide">"Çok hızlı ve güvenilir hizmet, İkame TV harika bir detay!"</span>
-              </div>
+                <div className="flex flex-col">
+                  <span className="text-slate-200 font-medium tracking-wide">"Herşey çok iyiydi. İlk iletişime geçtiğim andan ürün..."</span>
+                  <span className="text-slate-400 text-xs italic group-hover:text-blue-400">erdi yaygun</span>
+                </div>
+              </a>
             ))}
           </div>
           {/* Duplicate for seamless looping */}
           <div className="flex animate-[marquee_20s_linear_infinite] whitespace-nowrap gap-12 px-6 items-center" aria-hidden="true">
             {[...Array(6)].map((_, i) => (
-              <div key={`m2-${i}`} className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50">
+              <a key={`m2-${i}`} href="https://share.google/aalYzl5XiivwzeD00" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-slate-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-slate-700/50 hover:bg-slate-700/50 transition-colors cursor-pointer group">
                 <div className="flex text-amber-400 text-lg">
                   <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 </div>
-                <span className="text-slate-200 font-medium tracking-wide">"Çok hızlı ve güvenilir hizmet, İkame TV harika bir detay!"</span>
-              </div>
+                <div className="flex flex-col">
+                  <span className="text-slate-200 font-medium tracking-wide">"Herşey çok iyiydi. İlk iletişime geçtiğim andan ürün..."</span>
+                  <span className="text-slate-400 text-xs italic group-hover:text-blue-400">erdi yaygun</span>
+                </div>
+              </a>
             ))}
           </div>
         </div>
@@ -118,49 +124,49 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Card 1 */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
+            <Link href="/hizmetler/kirik-ekran-tamiri" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
               <div className="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mb-6">
                 <Zap className="w-7 h-7 text-red-500" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Kırık & Çatlak Ekranlar</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Kırık & Çatlak Ekranlar</h3>
               <p className="text-slate-600 leading-relaxed">
                 Fiziksel darbe sonucu kırılan, çatlayan veya içten mürekkep dağılması yaşayan televizyon panelleri onarılamaz. Tamamen orijinal, kutulu sıfır panel değişimi ile sorunu kalıcı olarak çözüyoruz.
               </p>
-            </div>
+            </Link>
 
             {/* Card 2 */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
+            <Link href="/hizmetler/tv-sivi-temasi-onarimi" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
               <div className="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6">
                 <Droplets className="w-7 h-7 text-brand-blue" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Sıvı Teması & Oksitlenme</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Sıvı Teması & Oksitlenme</h3>
               <p className="text-slate-600 leading-relaxed">
                 Ekran temizliği sırasında panelin alt kısmına kaçan sıvı veya nem, COF flex kablolarını çürütür ve kısa devreye yol açar. Gelişmiş onarım veya tamamen yeni panel ile profesyonel bir yenileme sağlıyoruz.
               </p>
-            </div>
+            </Link>
 
             {/* Card 3 */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
+            <Link href="/hizmetler/dikey-ve-yatay-cizgiler" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
               <div className="w-14 h-14 rounded-xl bg-purple-50 flex items-center justify-center mb-6">
                 <Grid className="w-7 h-7 text-purple-500" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Dikey & Yatay Çizgiler</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Dikey & Yatay Çizgiler</h3>
               <p className="text-slate-600 leading-relaxed">
                 Ekranda aniden beliren renkli dikey çizgiler, yatay bantlar veya görüntünün ikiye bölünmesi gibi matris arızaları için yüksek kesinlikte tespit yapıyor ve orijinal parça ile garantili değiştiriyoruz.
               </p>
-            </div>
+            </Link>
 
             {/* Card 4 - New */}
-            <div className="relative overflow-hidden bg-gradient-to-br from-white to-blue-50/50 p-8 rounded-2xl shadow-sm border border-blue-100 hover:shadow-md hover:border-brand-blue/50 transition-all duration-300 group">
+            <Link href="/hizmetler/led-bar-degisimi" className="block relative overflow-hidden bg-gradient-to-br from-white to-blue-50/50 p-8 rounded-2xl shadow-sm border border-blue-100 hover:shadow-md hover:border-brand-blue/50 transition-all duration-300 group">
               <div className="absolute top-0 right-0 bg-brand-blue text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">En İyi Özelliğimiz</div>
               <div className="w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <MonitorPlay className="w-7 h-7 text-green-500" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">LED Değişimi</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">LED Değişimi</h3>
               <p className="text-slate-600 leading-relaxed">
                 Sadece panel değil, LED değişimi de atölyemizde özenle yapılmaktadır. LED reflektörü ile tamir edilmesi gereken cihazlar, bu profesyonel prosedüre uygun şekilde, <strong className="text-brand-blue">özel reflektör kullanılarak</strong> onarılmaktadır.
               </p>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

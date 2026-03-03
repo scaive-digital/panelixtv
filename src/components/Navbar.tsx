@@ -26,6 +26,31 @@ export default function Navbar() {
             TV Modelleri
           </Link>
           <div className="relative group py-2">
+            <span className="cursor-pointer text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors uppercase tracking-wider">
+              Hizmetlerimiz
+            </span>
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[260px] bg-white rounded-xl shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+              <div className="p-2 flex flex-col gap-1">
+                {[
+                  { name: "Kırık Ekran Tamiri", slug: "kirik-ekran-tamiri" },
+                  { name: "Sıvı Teması Onarımı", slug: "tv-sivi-temasi-onarimi" },
+                  { name: "Orijinal Panel Değişimi", slug: "tv-panel-degisimi" },
+                  { name: "Dikey & Yatay Çizgi Tamiri", slug: "dikey-ve-yatay-cizgiler" },
+                  { name: "LED Bar Değişimi", slug: "led-bar-degisimi" },
+                  { name: "Anakart & Besleme Tamiri", slug: "anakart-tamiri" }
+                ].map((service) => (
+                  <Link
+                    key={service.slug}
+                    href={`/hizmetler/${service.slug}`}
+                    className="px-4 py-2 text-sm text-slate-600 hover:text-brand-blue hover:bg-slate-50 rounded-lg transition-colors"
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="relative group py-2">
             <span className="cursor-pointer text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">
               Markalar
             </span>
