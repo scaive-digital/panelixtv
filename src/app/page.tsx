@@ -97,10 +97,10 @@ export default function Home() {
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-brand-blue text-sm font-semibold mb-6">
                 <ShieldCheck className="w-4 h-4" />
-                <span>Türkiye'nin Lider Panel Değişim Merkezi</span>
+                <span>Türkiye'nin ve İstanbul'un Lider Panel Değişim Merkezi</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
-                Televizyonunuz İçin <span className="text-brand-blue">Profesyonel</span> Panel Yenileme Çözümleri.
+                <span className="text-brand-blue">İstanbul TV Ekran Tamiri</span> ve Profesyonel Yenileme Çözümleri.
               </h1>
               <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
                 Yüksek maliyetli yeni cihaz yatırımlarına gerek kalmadan; kırık, sıvı temaslı veya arızalı televizyon ekranlarınızı %100 orijinal yedek parçalar ve uzman laboratuvar işçiliği ile ilk günkü standartlarına kavuşturuyoruz.
@@ -201,7 +201,7 @@ export default function Home() {
       <section className="py-20 lg:py-28 bg-slate-50">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-brand-blue mb-6 tracking-tight">Hizmetlerimiz</h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-brand-blue mb-6 tracking-tight">TV Tamir ve Panel Değişimi Hizmetlerimiz</h2>
             <p className="text-lg text-slate-600">
               Televizyon ekranlarında karşılaşılan en yaygın donanımsal arızalara kesin ve garantili çözümler sunuyoruz. Ekranı değiştirmek, yeni TV almaktan çok daha ekonomiktir.
             </p>
@@ -308,7 +308,7 @@ export default function Home() {
             </div>
 
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Neden Panelix'i Tercih Etmelisiniz?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">İstanbul TV Tamiri İçin Neden Panelix'i Tercih Etmelisiniz?</h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                 Panelix olarak sadece bir tamir servisi değil, televizyonunuzun ömrünü uzatan profesyonel bir "Yenileme Merkezi"yiz. Piyasada sıkça rastlanan düşük kaliteli yan sanayi paneller veya kısa süreli geçici çözümler yerine, yalnızca sertifikalı ve <strong className="text-slate-900">100% orijinal paneller</strong> kullanıyoruz.
               </p>

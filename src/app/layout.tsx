@@ -16,8 +16,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Panelix | Orijinal TV Panel Değişim Merkezi",
-  description: "Televizyonunuzu çöpe atmayın. Orijinal panel değişimi, sıvı teması ve kırık ekran tamiri ile televizyonunuzu ilk günkü gibi yeniliyoruz.",
+  title: "İstanbul TV Ekran Tamiri ve Panel Değişimi | Panelix 2026",
+  description: "Türkiye ve İstanbul genelinde garantili TV panel değişimi, orijinal yedek parça, kırık ekran tamiri. Hızlı teslimat ve ikame TV hizmetiyle tanışın.",
+  keywords: ["tv tamiri istanbul", "tv panel değişimi", "kırık tv ekran tamiri", "orijinal yedek parça", "televizyon tamircisi", "garantili tv servisi", "ikame tv hizmeti"],
+  openGraph: {
+    title: "İstanbul TV Ekran Tamiri ve Panel Değişimi | Panelix 2026",
+    description: "Türkiye ve İstanbul genelinde garantili TV panel değişimi, orijinal yedek parça, kırık ekran tamiri. Hızlı teslimat ve ikame TV hizmetiyle tanışın.",
+    url: "https://panelixtv.com",
+    siteName: "Panelix",
+    locale: "tr_TR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "İstanbul TV Ekran Tamiri ve Panel Değişimi | Panelix",
+    description: "Garantili TV panel değişimi, orijinal yedek parça, kırık ekran tamiri.",
+  },
 };
 
 export default function RootLayout({
