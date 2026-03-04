@@ -32,7 +32,7 @@ export default function WarrantyPage() {
 
                     <div className="prose prose-slate max-w-none text-slate-600">
                         <p>
-                            Panelix (Scaive Dijital destekli kuruluştur) tarafından laboratuvar ortamında gerçekleştirilen tüm <strong>Orijinal Panel Değişimi</strong> ve <strong>Donanım Onarımı</strong> işlemleri, aksi müşteri onayı ile belirtilmedikçe garanti altındadır. Amacımız, onardığımız cihazların uzun yıllar sorunsuz kullanılmasını sağlamaktır.
+                            Panelix tarafından laboratuvar ortamında gerçekleştirilen tüm <strong>Orijinal Panel Değişimi</strong> ve <strong>Donanım Onarımı</strong> işlemleri, aksi müşteri onayı ile belirtilmedikçe garanti altındadır. Amacımız, onardığımız cihazların uzun yıllar sorunsuz kullanılmasını sağlamaktır.
                         </p>
 
                         <h3 className="text-lg font-bold text-slate-900 mt-8 mb-4">1. Garanti Süresi</h3>

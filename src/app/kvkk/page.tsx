@@ -35,7 +35,7 @@ export default function KVKKPage() {
                             Son Güncelleme: Ocak 2026
                         </p>
                         <p>
-                            Panelix olarak (Scaive Dijital), müşterilerimizin ve web sitemizi ziyaret eden kullanıcılarımızın kişisel verilerinin korunmasına büyük önem vermekteyiz. Bu Aydınlatma Metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca veri sorumlusu sıfatıyla tarafımızca aydınlatma yükümlülüğünün yerine getirilmesi amacıyla hazırlanmıştır.
+                            Panelix olarak, müşterilerimizin ve web sitemizi ziyaret eden kullanıcılarımızın kişisel verilerinin korunmasına büyük önem vermekteyiz. Bu Aydınlatma Metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca veri sorumlusu sıfatıyla tarafımızca aydınlatma yükümlülüğünün yerine getirilmesi amacıyla hazırlanmıştır.
                         </p>
 
                         <h3 className="text-lg font-bold text-slate-900 mt-8 mb-4">1. Hangi Verilerinizi İşliyoruz?</h3>
