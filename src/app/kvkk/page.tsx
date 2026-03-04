@@ -62,7 +62,7 @@ export default function KVKKPage() {
 
                         <h3 className="text-lg font-bold text-slate-900 mt-8 mb-4">4. KVKK Uyarınca Haklarınız</h3>
                         <p>
-                            KVKK'nın 11. maddesi kapsamındaki haklarınız uyarınca, veri sorumlusu olan tarafımıza başvurarak; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, eksik veya yanlışsa düzeltilmesini isteme haklarına sahipsiniz. Taleplerinizi <strong>teknik@scaive.com</strong> adresine iletebilirsiniz.
+                            KVKK'nın 11. maddesi kapsamındaki haklarınız uyarınca, veri sorumlusu olan tarafımıza başvurarak; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, eksik veya yanlışsa düzeltilmesini isteme haklarına sahipsiniz. Taleplerinizi WhatsApp hattımız aracılığıyla veya doğrudan iletişim sayfamız üzerinden bize iletebilirsiniz.
                         </p>
                     </div>
                 </div>
