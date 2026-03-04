@@ -35,6 +35,15 @@ export default function Footer() {
                                 <Link href="/tv-modelleri" className="text-slate-600 hover:text-brand-blue transition-colors">TV Modelleri</Link>
                             </li>
                             <li>
+                                <Link href="/hakkimizda" className="text-slate-600 hover:text-brand-blue transition-colors">Hakkımızda</Link>
+                            </li>
+                            <li>
+                                <Link href="/sss" className="text-slate-600 hover:text-brand-blue transition-colors">Sıkça Sorulan Sorular</Link>
+                            </li>
+                            <li>
+                                <Link href="/garanti-kosullari" className="text-slate-600 hover:text-brand-blue transition-colors">Garanti Koşulları</Link>
+                            </li>
+                            <li>
                                 <Link href="/iletisim" className="text-slate-600 hover:text-brand-blue transition-colors">İletişim</Link>
                             </li>
                         </ul>
@@ -82,7 +91,10 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-gray-200 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between text-sm text-slate-500 gap-4">
-                    <p>© {new Date().getFullYear()} Panelix. Tüm hakları saklıdır.</p>
+                    <div className="flex flex-col md:flex-row items-center gap-4">
+                        <p>© {new Date().getFullYear()} Panelix. Tüm hakları saklıdır.</p>
+                        <Link href="/kvkk" className="hover:text-brand-blue transition-colors">KVKK & Aydınlatma Metni</Link>
+                    </div>
                     <div className="flex items-center justify-end mt-2 md:mt-0">
                         <a href="https://scaive.com/" target="_blank" rel="noopener noreferrer" className="relative w-[500px] h-[125px] inline-block opacity-80 hover:opacity-100 transition-opacity">
                             <Image

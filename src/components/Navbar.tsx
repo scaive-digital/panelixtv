@@ -91,6 +91,20 @@ export default function Navbar() {
             </div>
           </div>
 
+          <div className="relative group py-2">
+            <span className="cursor-pointer text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors">
+              Kurumsal
+            </span>
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-48 bg-white rounded-xl shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+              <div className="p-2 flex flex-col gap-1">
+                <Link href="/hakkimizda" className="px-4 py-2 text-sm text-slate-600 hover:text-brand-blue hover:bg-slate-50 rounded-lg transition-colors">Hakkımızda</Link>
+                <Link href="/sss" className="px-4 py-2 text-sm text-slate-600 hover:text-brand-blue hover:bg-slate-50 rounded-lg transition-colors">S.S.S</Link>
+                <Link href="/garanti-kosullari" className="px-4 py-2 text-sm text-slate-600 hover:text-brand-blue hover:bg-slate-50 rounded-lg transition-colors">Garanti Koşulları</Link>
+                <Link href="/kvkk" className="px-4 py-2 text-sm text-slate-600 hover:text-brand-blue hover:bg-slate-50 rounded-lg transition-colors">KVKK & Aydınlatma</Link>
+              </div>
+            </div>
+          </div>
+
           <Link href="/iletisim" className="text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors">
             İletişim
           </Link>
@@ -182,6 +196,23 @@ export default function Navbar() {
                   {brand}
                 </Link>
               ))}
+            </div>
+          </div>
+
+          {/* Mobile Kurumsal Dropdown */}
+          <div className="border-b border-slate-100">
+            <button
+              className="w-full flex items-center justify-between py-3 px-4 text-slate-800 font-semibold hover:bg-slate-50 transition-colors"
+              onClick={() => toggleDropdown('kurumsal')}
+            >
+              Kurumsal
+              <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeMobileDropdown === 'kurumsal' ? 'rotate-180' : ''}`} />
+            </button>
+            <div className={`flex flex-col bg-slate-50 overflow-hidden transition-all duration-300 ${activeMobileDropdown === 'kurumsal' ? 'max-h-[500px]' : 'max-h-0'}`}>
+              <Link href="/hakkimizda" className="py-2.5 px-8 text-sm text-slate-600 hover:text-brand-blue" onClick={() => setIsMobileMenuOpen(false)}>Hakkımızda</Link>
+              <Link href="/sss" className="py-2.5 px-8 text-sm text-slate-600 hover:text-brand-blue" onClick={() => setIsMobileMenuOpen(false)}>Sıkça Sorulan Sorular</Link>
+              <Link href="/garanti-kosullari" className="py-2.5 px-8 text-sm text-slate-600 hover:text-brand-blue" onClick={() => setIsMobileMenuOpen(false)}>Garanti Koşulları</Link>
+              <Link href="/kvkk" className="py-2.5 px-8 text-sm text-slate-600 hover:text-brand-blue" onClick={() => setIsMobileMenuOpen(false)}>KVKK & Aydınlatma Metni</Link>
             </div>
           </div>
 
