@@ -4,9 +4,9 @@ import { Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-50 border-t border-gray-100 pt-16 pb-8">
+        <footer className="bg-slate-50 border-t border-gray-100 pt-8 pb-4">
             <div className="container mx-auto px-4 md:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 mb-8">
 
                     {/* Brand & Mission */}
                     <div className="lg:col-span-2">
@@ -90,15 +90,15 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-200 pt-8 mt-8 text-sm text-slate-500">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+                <div className="border-t border-gray-200 pt-4 mt-4 text-sm text-slate-500">
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-3 mb-3">
                         <div className="flex flex-col md:flex-row items-center gap-4">
                             <p>© {new Date().getFullYear()} Panelix. Tüm hakları saklıdır.</p>
                             <Link href="/kvkk" className="hover:text-brand-blue transition-colors">KVKK & Aydınlatma Metni</Link>
                         </div>
                     </div>
-                    <div className="flex justify-center pb-2">
-                        <a href="https://scaive.com/" target="_blank" rel="noopener noreferrer" className="relative w-[900px] h-[225px] max-w-full inline-block opacity-70 hover:opacity-100 transition-opacity">
+                    <div className="flex justify-center">
+                        <a href="https://scaive.com/" target="_blank" rel="noopener noreferrer" className="relative w-[900px] h-[90px] max-w-full inline-block opacity-70 hover:opacity-100 transition-opacity">
                             <Image
                                 src="/scaive.png"
                                 alt="Designed by Scaive"
