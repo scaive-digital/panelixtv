@@ -98,7 +98,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="flex justify-center pb-2">
-                        <a href="https://scaive.com/" target="_blank" rel="noopener noreferrer" className="relative w-[300px] h-[75px] inline-block opacity-70 hover:opacity-100 transition-opacity">
+                        <a href="https://scaive.com/" target="_blank" rel="noopener noreferrer" className="relative w-[900px] h-[225px] max-w-full inline-block opacity-70 hover:opacity-100 transition-opacity">
                             <Image
                                 src="/scaive.png"
                                 alt="Designed by Scaive"
