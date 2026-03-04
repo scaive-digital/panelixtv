@@ -8,7 +8,8 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { marka } = await params;
-    const capitalizedMarka = marka.charAt(0).toUpperCase() + marka.slice(1);
+    const decodedMarka = decodeURIComponent(marka);
+    const capitalizedMarka = decodedMarka.charAt(0).toUpperCase() + decodedMarka.slice(1);
     return {
         title: `${capitalizedMarka} TV Ekran Değişimi ve Panel Fiyatları 2026 | Panelix`,
         description: `${capitalizedMarka} televizyonunuz mu kırıldı? Orijinal ${capitalizedMarka} panel değişimi, ekran onarımı ve garantili servis hizmeti. Kırık ekran yenileme rehberi.`,
@@ -17,7 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BrandPage({ params }: Props) {
     const { marka } = await params;
-    const capitalizedMarka = marka.charAt(0).toUpperCase() + marka.slice(1);
+    const decodedMarka = decodeURIComponent(marka);
+    const capitalizedMarka = decodedMarka.charAt(0).toUpperCase() + decodedMarka.slice(1);
     const whatsappUrl = `https://wa.me/905350577188?text=Merhaba,%20${capitalizedMarka}%20TV%20panel%20değişimi%20hakkında%20bilgi%20ve%20fiyat%20almak%20istiyorum.`;
 
     return (
