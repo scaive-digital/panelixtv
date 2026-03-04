@@ -83,14 +83,13 @@ export default function Footer() {
 
                 <div className="border-t border-gray-200 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between text-sm text-slate-500 gap-4">
                     <p>© {new Date().getFullYear()} Panelix. Tüm hakları saklıdır.</p>
-                    <div className="flex items-center gap-0 mt-2 md:mt-0">
-                        <span className="whitespace-nowrap">Designed By</span>
-                        <a href="https://scaive.com/" target="_blank" rel="noopener noreferrer" className="relative w-[416px] h-[104px] inline-block opacity-80 hover:opacity-100 transition-opacity ml-0.5">
+                    <div className="flex items-center justify-end mt-2 md:mt-0">
+                        <a href="https://scaive.com/" target="_blank" rel="noopener noreferrer" className="relative w-[500px] h-[125px] inline-block opacity-80 hover:opacity-100 transition-opacity">
                             <Image
                                 src="/scaive.png"
                                 alt="Scaive"
                                 fill
-                                className="object-contain object-left"
+                                className="object-contain object-right"
                             />
                         </a>
                     </div>
