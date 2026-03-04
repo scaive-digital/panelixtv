@@ -74,7 +74,7 @@ export default async function BrandPage({ params }: Props) {
 
                             <h2 className="text-2xl font-bold text-slate-900 mb-4">Ekranı Kırılan {capitalizedMarka} TV İçin Süreç Nasıl İşler?</h2>
                             <p className="text-slate-600 mb-6 leading-relaxed">
-                                Panelix (Zero Teknik) laboratuvarı olarak biz, standart bir tak-çıkar ekran değişiminden çok daha kapsamlı bir revizyon süreci işletiyoruz. Ekranı kırıldı şikayetiyle gelen {capitalizedMarka} cihazlarınızı şu adımlarla yeniliyoruz:
+                                Panelix laboratuvarı olarak biz, standart bir tak-çıkar ekran değişiminden çok daha kapsamlı bir revizyon süreci işletiyoruz. Ekranı kırıldı şikayetiyle gelen {capitalizedMarka} cihazlarınızı şu adımlarla yeniliyoruz:
                             </p>
                             <div className="space-y-6 mb-8">
                                 <div className="flex gap-4">
