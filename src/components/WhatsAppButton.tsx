@@ -15,7 +15,7 @@ export default function WhatsAppButton() {
             <MessageCircle className="h-8 w-8 relative z-10" />
 
             {/* Tooltip on hover */}
-            <span className="absolute right-20 w-max origin-right scale-0 rounded bg-slate-800 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
+            <span className="hidden md:block absolute right-20 w-max origin-right scale-0 rounded bg-slate-800 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
                 WhatsApp'tan Fiyat Alın
             </span>
         </a>

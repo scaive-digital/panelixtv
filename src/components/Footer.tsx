@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Wrench, Mail, Phone, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -90,18 +90,20 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-200 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between text-sm text-slate-500 gap-4">
-                    <div className="flex flex-col md:flex-row items-center gap-4">
-                        <p>© {new Date().getFullYear()} Panelix. Tüm hakları saklıdır.</p>
-                        <Link href="/kvkk" className="hover:text-brand-blue transition-colors">KVKK & Aydınlatma Metni</Link>
+                <div className="border-t border-gray-200 pt-8 mt-8 text-sm text-slate-500">
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+                        <div className="flex flex-col md:flex-row items-center gap-4">
+                            <p>© {new Date().getFullYear()} Panelix. Tüm hakları saklıdır.</p>
+                            <Link href="/kvkk" className="hover:text-brand-blue transition-colors">KVKK & Aydınlatma Metni</Link>
+                        </div>
                     </div>
-                    <div className="flex items-center justify-end mt-2 md:mt-0">
-                        <a href="https://scaive.com/" target="_blank" rel="noopener noreferrer" className="relative w-[500px] h-[125px] inline-block opacity-80 hover:opacity-100 transition-opacity">
+                    <div className="flex justify-center pb-2">
+                        <a href="https://scaive.com/" target="_blank" rel="noopener noreferrer" className="relative w-[300px] h-[75px] inline-block opacity-70 hover:opacity-100 transition-opacity">
                             <Image
                                 src="/scaive.png"
-                                alt="Scaive"
+                                alt="Designed by Scaive"
                                 fill
-                                className="object-contain object-right"
+                                className="object-contain"
                             />
                         </a>
                     </div>
