@@ -35,8 +35,8 @@ export default function ContactPage() {
         <div className="bg-slate-50 min-h-screen py-16 md:py-24 w-full">
             <div className="container mx-auto px-4 md:px-8 max-w-6xl">
                 <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 text-center">Bize Ulaşmanın En Hızlı Yolu</h1>
-                <p className="text-lg text-slate-600 mb-16 text-center max-w-2xl mx-auto">
-                    Zamanınızın değerli olduğunu biliyoruz. Form doldurmakla, e-posta beklemekle vakit kaybetmeyin. Bize doğrudan ulaşın, anında çözüm anında fiyat sunalım.
+                <p className="text-lg text-slate-600 mb-6 text-center max-w-2xl mx-auto">
+                    TV Ekran arızalarınız için zamanınızın değerli olduğunu biliyoruz. Form doldurmakla veya telesekreterlerle vakit kaybetmeyin. Bize doğrudan İstanbul Merkez laboratuvarımızdan ulaşın, anında kalıcı ve ekonomik çözüm sunalım.
                 </p>
 
                 <div className="grid lg:grid-cols-2 gap-12 mb-20 items-stretch">
@@ -132,6 +132,25 @@ export default function ContactPage() {
                                 </div>
                             </details>
                         ))}
+                    </div>
+                </div>
+
+                {/* Additional SEO Content for Locations */}
+                <div className="max-w-4xl mx-auto mt-20 p-8 md:p-12 bg-white rounded-3xl shadow-sm border border-slate-100">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                        <MessageCircle className="w-6 h-6 text-brand-blue" />
+                        İstanbul'da Kesintisiz TV Tamiri
+                    </h2>
+                    <div className="prose prose-slate max-w-none text-slate-600 leading-relaxed text-sm md:text-base">
+                        <p className="mb-4">
+                            <strong>Panelix</strong> olarak misyonumuz, İstanbul'un her noktasına "kaliteli, şeffaf ve %100 orijinal parçalı" TV tamir hizmetini en hızlı şekilde sunmaktır. Alanında uzman teknik ekibimiz ve özel donanımlı ESD korumalı lojistik araçlarımızla, cihazlarınızı kapınızdan özenle alıp laboratuvarımızda onardıktan sonra ilk günkü performansı ile yine kapınıza teslim ediyoruz. Üstelik bu süreç boyunca sizleri mağdur etmemek adına <strong>ücretsiz ikame TV</strong> desteği sağlıyoruz.
+                        </p>
+                        <p className="mb-4">
+                            Televizyon ekran kırılması, mürekkep akması, COF (sıvı teması) veya dikey çizgilenme gibi zorlu T-CON arızalarında Avrupa ve Anadolu yakası fark etmeksizin yaygın ilçeler olan; <strong>Kadıköy, Şişli, Beşiktaş, Üsküdar, Pendik, Maltepe, Ümraniye, Bakırköy, Bahçelievler, Zeytinburnu, Sarıyer, Beykoz, Ataşehir, Kartal</strong> ve İstanbul'un diğer 39 ilçesinde aktif onarım kabulü yapmaktayız.
+                        </p>
+                        <p>
+                            Orijinal Samsung, LG, Philips, Sony veya Vestel marka televizyonunuzun model etiketini WhatsApp hattımıza gönderdiğinizde, bulunduğunuz ilçeye bağımsız olarak hemen ücretsiz analizden m fiyatlandırmadan yararlanabilirsiniz.
+                        </p>
                     </div>
                 </div>
 

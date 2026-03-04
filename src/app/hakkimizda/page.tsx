@@ -19,7 +19,7 @@ export default function AboutPage() {
                         Hakkımızda
                     </h1>
                     <p className="text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
-                        Televizyonlarınızı ilk günkü kalitesine ulaştıran profesyonel laboratuvar mimarisi: Panelix
+                        Televizyonlarınızı ilk günkü fabrika kalitesine ulaştıran profesyonel, statik elektrikten arındırılmış tam donanımlı laboratuvar mimarisi: Panelix
                     </p>
                 </div>
             </section>
@@ -28,12 +28,12 @@ export default function AboutPage() {
             <section className="container mx-auto px-4 md:px-8 mt-12">
                 <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
                     <div>
-                        <h2 className="text-3xl font-bold text-slate-900 mb-6">TV Tamirinde Yeni Standartlar</h2>
+                        <h2 className="text-3xl font-bold text-slate-900 mb-6">TV Tamirinde Mühendislik Standartları</h2>
                         <p className="text-slate-600 mb-6 leading-relaxed">
-                            Teknolojinin hızla geliştiği günümüzde, televizyonlar evimizin ve iş yerimizin vazgeçilmez bir parçası haline gelmiştir. Ancak kırık ekranlar, sıvı teması veya ömrünü yitirmiş LED paneller, yüksek maliyetli yeni bir cihaz alımını zorunlu kılmaktadır. <strong>Panelix</strong> olarak biz, bu yüksek maliyetlere karşı sürdürülebilir, %100 orijinal ve ekonomik bir çözüm sunmak için yola çıktık.
+                            Teknolojinin 8K, OLED ve kuantum noktalı ekranlara (QLED) evrildiği günümüzde, televizyonlar evimizin ve iş yerimizin vazgeçilmez bir parçası haline gelmiştir. Ancak kırık ekranlar, sıvı temasına bağlı COF oksitlenmeleri veya ömrünü yitirmiş LED panel aydınlatmaları arızalandığında maalesef kullanıcı fahiş yeni cihaz bütçeleriyle karşı karşıya kalır. <strong>Panelix</strong> (Scaive Dijital güvencesiyle) olarak biz, bu durumları önlemek amacıyla; %100 orijinal parçalı, garantili, şeffaf teknolojik altyapılarımız ile sürdürülebilir onarım çözümleri üretiyoruz.
                         </p>
                         <p className="text-slate-600 mb-6 leading-relaxed">
-                            Geleneksel "tak-çıkar" tv tamircisi mantığından sıyrılarak, cihazlarınızı tozsuz ve statik elektrikten arındırılmış laboratuvar ortamlarında onarıyoruz. Hedefimiz sadece arızayı gidermek değil, cihazınızın ömrünü uzatarak fabrika çıkış kalitesini sizlere eksiksiz iade etmektir.
+                            Geleneksel "tak-çıkar" veya bölgesel merdiven altı tamirci mantığından tamamen sıyrılarak çalışıyoruz. Cihazlarınız, İstanbul Merkez servisimizde <strong>ESD (Elektrostatik Deşarj) korumalı steril laboratuvar ortamlarında</strong>, entegre tamirlerine ve bonding makinelerine sahip teknisyenlerimizce incelenir ve onarılır. Cihazınıza müdahale ederken; sıfır ölü piksel hedefi, orijinal renk doygunluk kalibrasyonu ve sıvı sızdırmazlık testleri uygulanarak teslimat sağlanır. Hedefimiz günü kurtarmak değil, cihazınızın ömrünü uzatarak fabrika çıkış kalitesini uzun yıllar sorunsuz deneyimlemenizdir.
                         </p>
                         <a
                             href={whatsappUrl}
