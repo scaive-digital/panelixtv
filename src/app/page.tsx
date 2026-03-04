@@ -106,6 +106,18 @@ export default function Home() {
                 Yüksek maliyetli yeni cihaz yatırımlarına gerek kalmadan; kırık, sıvı temaslı veya arızalı televizyon ekranlarınızı %100 orijinal yedek parçalar ve uzman laboratuvar işçiliği ile ilk günkü standartlarına kavuşturuyoruz.
               </p>
 
+              <div className="flex flex-col sm:flex-row gap-4 inline-block mb-8">
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex justify-center items-center gap-2 rounded-full bg-brand-blue px-8 py-4 text-lg font-bold text-white shadow-xl shadow-blue-500/30 hover:bg-brand-darkblue hover:scale-105 transition-all duration-300"
+                >
+                  <PhoneCall className="h-5 w-5 animate-pulse" />
+                  WhatsApp'tan Anında Fiyat Al
+                </a>
+              </div>
+
               {/* Feature Highlights including Temporary TV */}
               <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 mb-8 flex items-start gap-4">
                 <div className="bg-amber-100 p-2 rounded-lg shrink-0 mt-1">
@@ -117,18 +129,6 @@ export default function Home() {
                     Televizyonunuzu atölyemize alırken, onarım süreci boyunca mağdur olmamanız için size <strong>ücretsiz geçici bir televizyon (İkame TV)</strong> bırakıyoruz. Kendi televizyonunuz orijinal paneliyle onarılıp teslim edildiğinde, ikame cihazımızı geri teslim alıyoruz. Eğlenceniz asla yarım kalmaz!
                   </p>
                 </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 inline-block">
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex justify-center items-center gap-2 rounded-full bg-brand-blue px-8 py-4 text-lg font-bold text-white shadow-xl shadow-blue-500/30 hover:bg-brand-darkblue hover:scale-105 transition-all duration-300"
-                >
-                  <PhoneCall className="h-5 w-5 animate-pulse" />
-                  WhatsApp'tan Anında Fiyat Al
-                </a>
               </div>
               <div className="mt-8 flex flex-wrap items-center gap-6 text-sm font-medium text-slate-500">
                 <div className="flex items-center gap-2">
