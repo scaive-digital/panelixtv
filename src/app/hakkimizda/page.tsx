@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Hakkımızda | Panelix TV Ekran Değişim Merkezi",
-    description: "Türkiye'nin ve İstanbul'un lider TV panel değişim laboratuvarı olan Panelix hakkında bilgi edinin. Kurumsal vizyonumuz ve uzman ekibimiz.",
+    description: "Türkiye&apos;nin ve İstanbul&apos;un lider TV panel değişim laboratuvarı olan Panelix hakkında bilgi edinin. Kurumsal vizyonumuz ve uzman ekibimiz.",
 };
 
 export default function AboutPage() {
@@ -33,7 +33,7 @@ export default function AboutPage() {
                             Teknolojinin 8K ve kuantum noktalı ekranlara (QLED) evrildiği günümüzde, televizyonlar evimizin ve iş yerimizin vazgeçilmez bir parçası haline gelmiştir. Ancak kırık ekranlar, sıvı temasına bağlı COF oksitlenmeleri veya ömrünü yitirmiş LED panel aydınlatmaları arızalandığında maalesef kullanıcı fahiş yeni cihaz bütçeleriyle karşı karşıya kalır. <strong>Panelix</strong> olarak biz, bu durumları önlemek amacıyla; %100 orijinal parçalı, garantili, şeffaf teknolojik altyapılarımız ile sürdürülebilir onarım çözümleri üretiyoruz.
                         </p>
                         <p className="text-slate-600 mb-6 leading-relaxed">
-                            Geleneksel "tak-çıkar" veya bölgesel merdiven altı tamirci mantığından tamamen sıyrılarak çalışıyoruz. Cihazlarınız, İstanbul Merkez servisimizde <strong>ESD (Elektrostatik Deşarj) korumalı steril laboratuvar ortamlarında</strong>, entegre tamirlerine ve bonding makinelerine sahip teknisyenlerimizce incelenir ve onarılır. Cihazınıza müdahale ederken; sıfır ölü piksel hedefi, orijinal renk doygunluk kalibrasyonu ve sıvı sızdırmazlık testleri uygulanarak teslimat sağlanır. Hedefimiz günü kurtarmak değil, cihazınızın ömrünü uzatarak fabrika çıkış kalitesini uzun yıllar sorunsuz deneyimlemenizdir.
+                            Geleneksel &quot;tak-çıkar&quot; veya bölgesel merdiven altı tamirci mantığından tamamen sıyrılarak çalışıyoruz. Cihazlarınız, İstanbul Merkez servisimizde <strong>ESD (Elektrostatik Deşarj) korumalı steril laboratuvar ortamlarında</strong>, entegre tamirlerine ve bonding makinelerine sahip teknisyenlerimizce incelenir ve onarılır. Cihazınıza müdahale ederken; sıfır ölü piksel hedefi, orijinal renk doygunluk kalibrasyonu ve sıvı sızdırmazlık testleri uygulanarak teslimat sağlanır. Hedefimiz günü kurtarmak değil, cihazınızın ömrünü uzatarak fabrika çıkış kalitesini uzun yıllar sorunsuz deneyimlemenizdir.
                         </p>
                         <a
                             href={whatsappUrl}

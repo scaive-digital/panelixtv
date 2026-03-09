@@ -2,7 +2,7 @@ import { PhoneCall, Mail, Clock, MessageCircle } from "lucide-react";
 
 export const metadata = {
     title: "İletişim | Panelix",
-    description: "Türkiye'nin lider TV panel değişim merkezi Panelix'e ulaşın. Form doldurmanıza gerek yok, doğrudan WhatsApp üzerinden 5 dakikada fiyat alın.",
+    description: "Türkiye&apos;nin lider TV panel değişim merkezi Panelix&apos;e ulaşın. Form doldurmanıza gerek yok, doğrudan WhatsApp üzerinden 5 dakikada fiyat alın.",
 };
 
 export default function ContactPage() {
@@ -19,11 +19,11 @@ export default function ContactPage() {
         },
         {
             q: "Kırık televizyon tamir edilir mi, yoksa yenisini mi almalıyım?",
-            a: "Televizyonunuzun anakartı, besleme kartı ve LED'leri sağlamsa, sadece paneli kırıldıysa yenisini almaktan %50 ile %70 arasında daha uygun maliyetle orijinal panel takarak cihazınızı kurtarabilirsiniz."
+            a: "Televizyonunuzun anakartı, besleme kartı ve LED&apos;leri sağlamsa, sadece paneli kırıldıysa yenisini almaktan %50 ile %70 arasında daha uygun maliyetle orijinal panel takarak cihazınızı kurtarabilirsiniz."
         },
         {
             q: "İstanbul dışından kargoyla TV gönderebilir miyim?",
-            a: "Evet, tüm Türkiye'ye hizmet veriyoruz. Lojistik anlaşmamız ile büyük ekranlı televizyonlarınızı bile güvenle servisimize gönderebilirsiniz."
+            a: "Evet, tüm Türkiye&apos;ye hizmet veriyoruz. Lojistik anlaşmamız ile büyük ekranlı televizyonlarınızı bile güvenle servisimize gönderebilirsiniz."
         },
         {
             q: "İşlem sonrası ne kadar garanti veriyorsunuz?",
@@ -98,7 +98,7 @@ export default function ContactPage() {
                     {/* Map */}
                     <div className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden h-full min-h-[400px] relative group">
                         <a href="https://maps.app.goo.gl/sXH99MgLMqBSqMsD8" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm">
-                            <span className="bg-white text-slate-900 font-bold px-6 py-3 rounded-full shadow-xl">Google Haritalar'da Aç</span>
+                            <span className="bg-white text-slate-900 font-bold px-6 py-3 rounded-full shadow-xl">Google Haritalar&apos;da Aç</span>
                         </a>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d500!2d28.8813262!3d40.9784163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabd82ad2f92df%3A0x9b973e9e51891f4a!2sBak%C4%B1rk%C3%B6y%20Led%20Tv%20Uydu%20Teknik%20Servis%20(Furkan%20Elektronik)!5e0!3m2!1str!2str!4v1709462719225!5m2!1str!2str"
@@ -139,14 +139,14 @@ export default function ContactPage() {
                 <div className="max-w-4xl mx-auto mt-20 p-8 md:p-12 bg-white rounded-3xl shadow-sm border border-slate-100">
                     <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
                         <MessageCircle className="w-6 h-6 text-brand-blue" />
-                        İstanbul'da Kesintisiz TV Tamiri
+                        İstanbul&apos;da Kesintisiz TV Tamiri
                     </h2>
                     <div className="prose prose-slate max-w-none text-slate-600 leading-relaxed text-sm md:text-base">
                         <p className="mb-4">
-                            <strong>Panelix</strong> olarak misyonumuz, İstanbul'un her noktasına "kaliteli, şeffaf ve %100 orijinal parçalı" TV tamir hizmetini en hızlı şekilde sunmaktır. Alanında uzman teknik ekibimiz ve özel donanımlı ESD korumalı lojistik araçlarımızla, cihazlarınızı kapınızdan özenle alıp laboratuvarımızda onardıktan sonra ilk günkü performansı ile yine kapınıza teslim ediyoruz. Üstelik bu süreç boyunca sizleri mağdur etmemek adına <strong>ücretsiz ikame TV</strong> desteği sağlıyoruz.
+                            <strong>Panelix</strong> olarak misyonumuz, İstanbul&apos;un her noktasına &quot;kaliteli, şeffaf ve %100 orijinal parçalı&quot; TV tamir hizmetini en hızlı şekilde sunmaktır. Alanında uzman teknik ekibimiz ve özel donanımlı ESD korumalı lojistik araçlarımızla, cihazlarınızı kapınızdan özenle alıp laboratuvarımızda onardıktan sonra ilk günkü performansı ile yine kapınıza teslim ediyoruz. Üstelik bu süreç boyunca sizleri mağdur etmemek adına <strong>ücretsiz ikame TV</strong> desteği sağlıyoruz.
                         </p>
                         <p className="mb-4">
-                            Televizyon ekran kırılması, mürekkep akması, COF (sıvı teması) veya dikey çizgilenme gibi zorlu T-CON arızalarında Avrupa ve Anadolu yakası fark etmeksizin yaygın ilçeler olan; <strong>Kadıköy, Şişli, Beşiktaş, Üsküdar, Pendik, Maltepe, Ümraniye, Bakırköy, Bahçelievler, Zeytinburnu, Sarıyer, Beykoz, Ataşehir, Kartal</strong> ve İstanbul'un diğer 39 ilçesinde aktif onarım kabulü yapmaktayız.
+                            Televizyon ekran kırılması, mürekkep akması, COF (sıvı teması) veya dikey çizgilenme gibi zorlu T-CON arızalarında Avrupa ve Anadolu yakası fark etmeksizin yaygın ilçeler olan; <strong>Kadıköy, Şişli, Beşiktaş, Üsküdar, Pendik, Maltepe, Ümraniye, Bakırköy, Bahçelievler, Zeytinburnu, Sarıyer, Beykoz, Ataşehir, Kartal</strong> ve İstanbul&apos;un diğer 39 ilçesinde aktif onarım kabulü yapmaktayız.
                         </p>
                         <p>
                             Orijinal Samsung, LG, Philips, Sony veya Vestel marka televizyonunuzun model etiketini WhatsApp hattımıza gönderdiğinizde, bulunduğunuz ilçeye bağımsız olarak hemen ücretsiz analizden m fiyatlandırmadan yararlanabilirsiniz.

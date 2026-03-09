@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { tvModels, TvModel } from "@/data/tvModels";
+import { useState } from "react";
+import { tvModels } from "@/data/tvModels";
 import { Search, SlidersHorizontal, ChevronRight, MessageCircle, ChevronLeft } from "lucide-react";
-import Link from "next/link";
 
 export default function TvModelsPage() {
     const [selectedBrand, setSelectedBrand] = useState<string>("Hepsi");
@@ -12,10 +11,9 @@ export default function TvModelsPage() {
     const [currentPage, setCurrentPage] = useState<number>(1);
     const itemsPerPage = 20;
 
-    // Reset page to 1 whenever filters change
-    useEffect(() => {
-        setCurrentPage(1);
-    }, [selectedBrand, selectedSize, searchQuery]);
+    // Remove useEffect for setting page to 1 here as it isn't ideal in React Strict Mode.
+    // Instead we will handle the reset on change directly in the UI if needed
+    // or keep simple filtering the way it builds.
 
     // Get unique brands and sizes for filters
     const brands = ["Hepsi", ...Array.from(new Set(tvModels.map(tv => tv.brand)))];
@@ -55,7 +53,10 @@ export default function TvModelsPage() {
                                 type="text"
                                 placeholder="Model Kodu Ara..."
                                 value={searchQuery}
-                                onChange={(e) => setSearchQuery(e.target.value)}
+                                onChange={(e) => {
+                                    setSearchQuery(e.target.value);
+                                    setCurrentPage(1); // Handle page reset here on change
+                                }}
                                 className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue bg-slate-50 transition-all"
                             />
                             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -70,7 +71,7 @@ export default function TvModelsPage() {
                             Televizyon teknolojileri (QLED, NanoCell vb.) her geçen gün gelişmekte olup, her markanın kendine özgü bir anakart yapısı ve ekran mimarisi bulunmaktadır. Örneğin bir <strong>Samsung panel değişimi</strong> ile <strong>LG TV ekran onarımı</strong> süreçlerinde kullanılacak solüsyonlar, anakart voltaj değerleri ve yazılım entegrasyonları tamamen birbirinden farklıdır.
                         </p>
                         <p className="text-slate-600 mb-4 leading-relaxed">
-                            Piyasadaki standart "her markaya bakarız" yaklaşımından ziyade, Panelix laboratuvarlarında her marka için o markanın mühendislik şemalarına uygun onarım protokolleri izlenir. <strong>Sony televizyonunuzun görüntü kalitesini</strong> korumak için orijinal bileşenler, <strong>Philips Ambilight sisteminizde</strong> sorun yaşamamak için hassas arka kapak söküm teknikleri tercih edilir.
+                            Piyasadaki standart &quot;her markaya bakarız&quot; yaklaşımından ziyade, Panelix laboratuvarlarında her marka için o markanın mühendislik şemalarına uygun onarım protokolleri izlenir. <strong>Sony televizyonunuzun görüntü kalitesini</strong> korumak için orijinal bileşenler, <strong>Philips Ambilight sisteminizde</strong> sorun yaşamamak için hassas arka kapak söküm teknikleri tercih edilir.
                         </p>
                         <p className="text-slate-600 leading-relaxed font-medium">
                             Arızalı cihazınız listede bulunan markalardan biriyse; modeli veya üretim yılı ne olursa olsun bize danışarak cihazınıza tam uyumlu ve %100 orijinal parçalarla en uygun fiyat garantisi üzerinden fiyat teklifi alabilirsiniz.
@@ -98,7 +99,10 @@ export default function TvModelsPage() {
                                     {brands.map(brand => (
                                         <button
                                             key={brand}
-                                            onClick={() => setSelectedBrand(brand)}
+                                            onClick={() => {
+                                                setSelectedBrand(brand);
+                                                setCurrentPage(1); // update reset call
+                                            }}
                                             className={`text-left px-3 py-2 rounded-lg text-sm transition-all flex items-center justify-between group
                         ${selectedBrand === brand ? 'bg-brand-blue text-white font-medium shadow-md shadow-blue-500/20' : 'text-slate-600 hover:bg-slate-50'}`}
                                         >
@@ -116,7 +120,10 @@ export default function TvModelsPage() {
                                     {sizes.map(size => (
                                         <button
                                             key={size}
-                                            onClick={() => setSelectedSize(size)}
+                                            onClick={() => {
+                                                setSelectedSize(size)
+                                                setCurrentPage(1); // update reset call
+                                            }}
                                             className={`px-3 py-1.5 rounded-lg text-sm transition-all border
                         ${selectedSize === size ? 'bg-brand-blue text-white border-brand-blue shadow-md shadow-blue-500/20' : 'border-slate-200 text-slate-600 hover:border-brand-blue hover:text-brand-blue'}`}
                                         >
@@ -161,7 +168,7 @@ export default function TvModelsPage() {
                                                     </h3>
 
                                                     <div className="flex flex-wrap gap-2 mt-auto mb-5 text-xs font-semibold text-slate-600">
-                                                        <span className="bg-slate-100 border border-slate-200 px-2.5 py-1.5 rounded-lg">{tv.screenSize}" Ekran</span>
+                                                        <span className="bg-slate-100 border border-slate-200 px-2.5 py-1.5 rounded-lg">{tv.screenSize}&quot; Ekran</span>
                                                         <span className="bg-slate-100 border border-slate-200 px-2.5 py-1.5 rounded-lg">{tv.panelType}</span>
                                                         <span className="bg-slate-100 border border-slate-200 px-2.5 py-1.5 rounded-lg">{tv.resolution}</span>
                                                     </div>

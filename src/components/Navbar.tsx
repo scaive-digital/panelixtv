@@ -232,7 +232,7 @@ export default function Navbar() {
               className="flex justify-center items-center gap-2 w-full rounded-xl bg-brand-blue px-5 py-3 text-sm font-bold text-white shadow-sm hover:bg-brand-darkblue transition-colors"
             >
               <PhoneCall className="h-5 w-5" />
-              WhatsApp'tan Fiyat Al
+              WhatsApp&apos;tan Fiyat Al
             </a>
           </div>
         </div>

@@ -77,7 +77,7 @@ export default async function BrandPage({ params }: Props) {
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-2">
                                         <span className="text-red-500 font-bold">❌</span>
-                                        <span className="text-slate-600">{capitalizedMarka} TV'lerde fiziksel olarak kırılan, çatlayan veya mürekkebi akan ince cam ekranın <strong>onarımı veya tamiri mümkün değildir.</strong></span>
+                                        <span className="text-slate-600">{capitalizedMarka} TV&apos;lerde fiziksel olarak kırılan, çatlayan veya mürekkebi akan ince cam ekranın <strong>onarımı veya tamiri mümkün değildir.</strong></span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <span className="text-green-500 font-bold">✅</span>
@@ -129,7 +129,7 @@ export default async function BrandPage({ params }: Props) {
                                 <div className="p-6 border border-green-200 bg-green-50 rounded-2xl relative overflow-hidden group">
                                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-150 transition-transform"><ShieldCheck className="w-24 h-24 text-green-600" /></div>
                                     <h4 className="font-bold text-green-800 text-lg mb-2 relative z-10">Ekran Değişimi Kesinlikle Mantıklıdır</h4>
-                                    <p className="text-green-700/80 text-sm relative z-10">Eğer cihazınız üst ve orta segment (QLED, Smart 4K, 120Hz oyun destekli vb.) ise ve laboratuvarımızdan aldığınız orijinal panel değişim fiyatı, o cihazın bugün mağazadaki **yenisini almanın %60 - %70'ini geçmiyorsa** kesinlikle yaptırılmalıdır. Orijinal değişim sonrası {capitalizedMarka} TV'niz fabrika çıkış görüntü kalitesine eksiksiz döner.</p>
+                                    <p className="text-green-700/80 text-sm relative z-10">Eğer cihazınız üst ve orta segment (QLED, Smart 4K, 120Hz oyun destekli vb.) ise ve laboratuvarımızdan aldığınız orijinal panel değişim fiyatı, o cihazın bugün mağazadaki **yenisini almanın %60 - %70&apos;ini geçmiyorsa** kesinlikle yaptırılmalıdır. Orijinal değişim sonrası {capitalizedMarka} TV&apos;niz fabrika çıkış görüntü kalitesine eksiksiz döner.</p>
                                 </div>
                                 <div className="p-6 border border-red-200 bg-red-50 rounded-2xl relative overflow-hidden group">
                                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-150 transition-transform"><Settings className="w-24 h-24 text-red-600" /></div>
@@ -150,7 +150,7 @@ export default async function BrandPage({ params }: Props) {
                                 {capitalizedMarka} Modeli İçin 5 Dakikada Fiyat Alın!
                             </h3>
                             <p className="text-slate-600 mb-8 text-sm leading-relaxed">
-                                Televizyonunuzun arkasındaki <strong>model kodunun (örn: UE55TU7000)</strong> ve kırık ekranın fotoğrafını çekip bize WhatsApp'tan gönderin.
+                                Televizyonunuzun arkasındaki <strong>model kodunun (örn: UE55TU7000)</strong> ve kırık ekranın fotoğrafını çekip bize WhatsApp&apos;tan gönderin.
                             </p>
 
                             <a
@@ -160,7 +160,7 @@ export default async function BrandPage({ params }: Props) {
                                 className="flex items-center justify-center gap-2 w-full rounded-2xl bg-[#25D366] px-6 py-4 text-base font-bold text-white shadow-md hover:bg-[#20bd5a] transition-colors mb-4"
                             >
                                 <PhoneCall className="h-5 w-5 animate-pulse" />
-                                WhatsApp'a Gönder
+                                WhatsApp&apos;a Gönder
                             </a>
 
                             <div className="flex items-center justify-center gap-2 text-slate-500 text-xs font-semibold uppercase tracking-wider mt-4">

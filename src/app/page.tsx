@@ -97,7 +97,7 @@ export default function Home() {
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-brand-blue text-sm font-semibold mb-6">
                 <ShieldCheck className="w-4 h-4" />
-                <span>Türkiye'nin ve İstanbul'un Lider Panel Değişim Merkezi</span>
+                <span>Türkiye&apos;nin ve İstanbul&apos;un Lider Panel Değişim Merkezi</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
                 <span className="text-brand-blue">İstanbul TV Ekran Tamiri</span> ve Profesyonel Yenileme Çözümleri.
@@ -114,7 +114,7 @@ export default function Home() {
                   className="inline-flex justify-center items-center gap-2 rounded-full bg-brand-blue px-8 py-4 text-lg font-bold text-white shadow-xl shadow-blue-500/30 hover:bg-brand-darkblue hover:scale-105 transition-all duration-300"
                 >
                   <PhoneCall className="h-5 w-5 animate-pulse" />
-                  WhatsApp'tan Anında Fiyat Al
+                  WhatsApp&apos;tan Anında Fiyat Al
                 </a>
               </div>
 
@@ -203,7 +203,7 @@ export default function Home() {
                 <div className="flex text-amber-400 text-lg">
                   <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 </div>
-                <p className="text-slate-200 font-medium text-sm leading-relaxed italic line-clamp-4">"{review.text}"</p>
+                <p className="text-slate-200 font-medium text-sm leading-relaxed italic line-clamp-4">&quot;{review.text}&quot;</p>
                 <div className="mt-auto pt-4 border-t border-slate-700/50 flex justify-between items-center">
                   <span className="text-slate-400 font-semibold text-xs uppercase tracking-wider transition-colors">{review.author}</span>
                   <span className="text-brand-blue/50 text-xs">Google Yorumu</span>
@@ -218,7 +218,7 @@ export default function Home() {
                 <div className="flex text-amber-400 text-lg">
                   <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                 </div>
-                <p className="text-slate-200 font-medium text-sm leading-relaxed italic line-clamp-4">"{review.text}"</p>
+                <p className="text-slate-200 font-medium text-sm leading-relaxed italic line-clamp-4">&quot;{review.text}&quot;</p>
                 <div className="mt-auto pt-4 border-t border-slate-700/50 flex justify-between items-center">
                   <span className="text-slate-400 font-semibold text-xs uppercase tracking-wider transition-colors">{review.author}</span>
                   <span className="text-brand-blue/50 text-xs">Google Yorumu</span>
@@ -340,9 +340,9 @@ export default function Home() {
             </div>
 
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">İstanbul TV Tamiri İçin Neden Panelix'i Tercih Etmelisiniz?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">İstanbul TV Tamiri İçin Neden Panelix&apos;i Tercih Etmelisiniz?</h2>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                Panelix olarak sadece bir tamir servisi değil, televizyonunuzun ömrünü uzatan profesyonel bir "Yenileme Merkezi"yiz. Piyasada sıkça rastlanan düşük kaliteli yan sanayi paneller veya kısa süreli geçici çözümler yerine, yalnızca sertifikalı ve <strong className="text-slate-900">100% orijinal paneller</strong> kullanıyoruz.
+                Panelix olarak sadece bir tamir servisi değil, televizyonunuzun ömrünü uzatan profesyonel bir &quot;Yenileme Merkezi&quot;yiz. Piyasada sıkça rastlanan düşük kaliteli yan sanayi paneller veya kısa süreli geçici çözümler yerine, yalnızca sertifikalı ve <strong className="text-slate-900">100% orijinal paneller</strong> kullanıyoruz.
               </p>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                 Amacımız; kırık ekran veya sıvı teması sebebiyle yeni bir televizyon almak zorunda kalan tüketicilere ekonomik, sürdürülebilir ve güvenilir bir alternatif sunmaktır. Alanında uzman teknisyenlerimiz, en son teknoloji cihazlarla laboratuvar ortamında temiz ve hassas bir işçilik sergileyerek televizyonunuzun görüntü kalitesini ilk günkü haline getirir. Panelix güvencesiyle onarılan cihazlarınızda asla renk solması, piksel kaybı veya tepki gecikmesi yaşamazsınız. Tam şeffaflık ilkemizle parça modelinden fiyatlandırmaya kadar tüm aşamalarda sizi bilgilendirir, sürpriz maliyetler çıkarmayız.
