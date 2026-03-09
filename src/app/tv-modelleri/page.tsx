@@ -45,7 +45,7 @@ export default function TvModelsPage() {
                         <div>
                             <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3">Televizyon Markaları ve Ekran Değişimi Modelleri</h1>
                             <p className="text-slate-600 max-w-3xl leading-relaxed">
-                                İstanbul genelinde; Samsung, LG, Philips, Sony ve Vestel markalarının tüm popüler model serileri için (QLED, OLED, NanoCell, UHD) stoklu, %100 orijinal yedek panellerle hizmet veriyoruz. Aşağıdan modelinize uygun orijinal paneli bulun ve WhatsApp üzerinden saniyeler içinde anında ücretsiz fiyat alın.
+                                İstanbul genelinde; Samsung, LG, Philips, Sony ve Vestel markalarının tüm popüler model serileri için (QLED, NanoCell, UHD) stoklu, %100 orijinal yedek panellerle hizmet veriyoruz. Aşağıdan modelinize uygun orijinal paneli bulun ve WhatsApp üzerinden saniyeler içinde anında ücretsiz fiyat alın.
                             </p>
                         </div>
 
@@ -67,7 +67,7 @@ export default function TvModelsPage() {
                     <div className="prose prose-slate max-w-none">
                         <h2 className="text-2xl font-bold text-slate-900 mb-6">Neden Orijinal Parça ve Uzman Servis Önemlidir?</h2>
                         <p className="text-slate-600 mb-4 leading-relaxed">
-                            Televizyon teknolojileri (QLED, OLED, NanoCell vb.) her geçen gün gelişmekte olup, her markanın kendine özgü bir anakart yapısı ve ekran mimarisi bulunmaktadır. Örneğin bir <strong>Samsung panel değişimi</strong> ile <strong>LG TV ekran onarımı</strong> süreçlerinde kullanılacak solüsyonlar, anakart voltaj değerleri ve yazılım entegrasyonları tamamen birbirinden farklıdır.
+                            Televizyon teknolojileri (QLED, NanoCell vb.) her geçen gün gelişmekte olup, her markanın kendine özgü bir anakart yapısı ve ekran mimarisi bulunmaktadır. Örneğin bir <strong>Samsung panel değişimi</strong> ile <strong>LG TV ekran onarımı</strong> süreçlerinde kullanılacak solüsyonlar, anakart voltaj değerleri ve yazılım entegrasyonları tamamen birbirinden farklıdır.
                         </p>
                         <p className="text-slate-600 mb-4 leading-relaxed">
                             Piyasadaki standart "her markaya bakarız" yaklaşımından ziyade, Panelix laboratuvarlarında her marka için o markanın mühendislik şemalarına uygun onarım protokolleri izlenir. <strong>Sony televizyonunuzun görüntü kalitesini</strong> korumak için orijinal bileşenler, <strong>Philips Ambilight sisteminizde</strong> sorun yaşamamak için hassas arka kapak söküm teknikleri tercih edilir.

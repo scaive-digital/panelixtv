@@ -45,7 +45,7 @@ const serviceData: Record<string, { title: string, desc: string, icon: React.Rea
         seoArticle: (
             <>
                 <p className="text-slate-600 mb-6 leading-relaxed">
-                    Televizyon panel değişimi basit bir sök-tak işlemi değil, steril ortam ve yüksek hassasiyet gerektiren ileri düzey bir elektronik entegrasyondur. İster QLED donanımına sahip olun ister OLED ya da standart bir LED TV; panelin orijinal olması cihazın ömrünü, renk gamını ve yenileme hızını (Hz) doğrudan belirler. Piyasada maalesef ticari kaygılarla A Kalite veya yan sanayi paneller kullanılarak televizyonun orijinal donanımına ve ana kart voltajlarına hasar veren uygulamalar görmekteyiz.
+                    Televizyon panel değişimi basit bir sök-tak işlemi değil, steril ortam ve yüksek hassasiyet gerektiren ileri düzey bir elektronik entegrasyondur. İster QLED donanımına sahip olun ister standart bir LED TV; panelin orijinal olması cihazın ömrünü, renk gamını ve yenileme hızını (Hz) doğrudan belirler. Piyasada maalesef ticari kaygılarla A Kalite veya yan sanayi paneller kullanılarak televizyonun orijinal donanımına ve ana kart voltajlarına hasar veren uygulamalar görmekteyiz.
                 </p>
                 <p className="text-slate-600 mb-6 leading-relaxed">
                     Panelix olarak bizim temel felsefemiz <strong>"sadece fabrika standartlarındaki orijinal paneli"</strong> kullanmaktır. Samsung, LG, Sony veya diğer büyük markaların cihazınıza özel ürettiği kodlarla eşleşen paneller özenle temin edilir. Değişim işlemi statik elektrikten tamamen yalıtılmış ESD laboratuvarlarımızda gerçekleştirilir. Cihaz teslimatı öncesi; ölü piksel (dead pixel), ışık sızması (light bleed) ve homojen renk dağılım testleri yapılarak kusursuz sonuca ulaşıldığı teyit edilir.
@@ -77,6 +77,20 @@ const serviceData: Record<string, { title: string, desc: string, icon: React.Rea
                 <p className="text-slate-600 mb-6 leading-relaxed">
                     <strong>"Televizyondan ses geliyor ama ekran kapkaranlık, görüntü yok!"</strong> Şüphesiz her kullanıcının bir gün duyabileceği bu klasik cümlenin teknolojik karşılığı LED arka aydınlatma (Backlight) arızasıdır. Ekrandaki kristallerin sizin gözünüze ulaşmasını sağlayan çok sayıdaki LED ampullerden yalnızca biri dahi seri bağlantıda koptuğunda, anakart güvenlik amaçlı tüm aydınlatmayı keser. Fenerle ekrana yakından bakarsanız aslında görüntünün çok soluk bir şekilde akmakta olduğunu fark edebilirsiniz.
                 </p>
+                <div className="flex flex-wrap gap-3 mb-6 not-prose">
+                    <span className="inline-flex items-center rounded-full bg-red-50 px-3 py-1.5 text-sm font-medium text-red-700 ring-1 ring-inset ring-red-600/10 cursor-default select-none">
+                        <CheckCircle2 className="w-4 h-4 mr-1.5" />
+                        Ses var görüntü yok
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10 cursor-default select-none">
+                        <CheckCircle2 className="w-4 h-4 mr-1.5" />
+                        Mavi ekran hatası
+                    </span>
+                    <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1.5 text-sm font-medium text-slate-800 ring-1 ring-inset ring-slate-500/10 cursor-default select-none">
+                        <CheckCircle2 className="w-4 h-4 mr-1.5" />
+                        Ekranın belirli bölgelerinin kararması
+                    </span>
+                </div>
                 <p className="text-slate-600 mb-6 leading-relaxed">
                     Sektördeki en büyük hata, patlayan tek bir LED lambasının lehimle bölgesel olarak değiştirilmesidir. Zira ömrünü dolduran diğer lambalar da kısa süre sonra patlamaya devam edecek ve cihazınız sürekli servise gidip gelecektir. Panelix vizyonu gereği; cihazınızda meydana gelen aydınlatma problemlerinde arkelojik bir titizlikle panel yüzeyi sökülür ve sadece patlayan ampul değil, <strong>tüm LED bar seti reflektörü ile birlikte komple ve orijinal sıfırıyla</strong> değiştirilir. Ayrıca beyaz kalibrasyonu yapılarak cihazın ömrü yıllarca uzatılmış olur.
                 </p>

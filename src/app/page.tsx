@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PhoneCall, ShieldCheck, Wrench, Clock, MonitorPlay, Zap, Droplets, Grid } from "lucide-react";
+import { PhoneCall, ShieldCheck, Wrench, Clock, MonitorPlay, Zap, Droplets, Grid, BadgeCheck, Banknote, Truck } from "lucide-react";
 
 const reviews = [
   {
@@ -106,7 +106,7 @@ export default function Home() {
                 Yüksek maliyetli yeni cihaz yatırımlarına gerek kalmadan; kırık, sıvı temaslı veya arızalı televizyon ekranlarınızı %100 orijinal yedek parçalar ve uzman laboratuvar işçiliği ile ilk günkü standartlarına kavuşturuyoruz.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 inline-block mb-8">
+              <div className="flex flex-col sm:flex-row gap-4 inline-block mb-6">
                 <a
                   href={whatsappUrl}
                   target="_blank"
@@ -118,26 +118,58 @@ export default function Home() {
                 </a>
               </div>
 
+              {/* Quick Service Options */}
+              <div className="flex flex-wrap gap-2 mb-8">
+                <Link href="/hizmetler/kirik-ekran-tamiri" className="text-xs md:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full transition-colors border border-slate-200 shadow-sm">
+                  Kırık Ekran Tamiri
+                </Link>
+                <Link href="/hizmetler/tv-panel-degisimi" className="text-xs md:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full transition-colors border border-slate-200 shadow-sm">
+                  Panel Değişimi
+                </Link>
+                <Link href="/hizmetler/led-bar-degisimi" className="text-xs md:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full transition-colors border border-slate-200 shadow-sm">
+                  Led Değişim
+                </Link>
+                <Link href="/hizmetler/led-bar-degisimi" className="text-xs md:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full transition-colors border border-slate-200 shadow-sm">
+                  Led ve Reflektör Değişim
+                </Link>
+              </div>
+
               {/* Feature Highlights including Temporary TV */}
               <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 mb-8 flex items-start gap-4">
                 <div className="bg-amber-100 p-2 rounded-lg shrink-0 mt-1">
                   <MonitorPlay className="w-6 h-6 text-amber-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-amber-900 text-lg">Konsantrasyonunuz Bozulmasın: İkame TV Hizmeti!</h4>
+                  <h4 className="font-bold text-amber-900 text-lg">Onarım Süresince Size Geçici TV Bırakıyoruz</h4>
                   <p className="text-amber-800 text-sm mt-1">
                     Televizyonunuzu atölyemize alırken, onarım süreci boyunca mağdur olmamanız için size <strong>ücretsiz geçici bir televizyon (İkame TV)</strong> bırakıyoruz. Kendi televizyonunuz orijinal paneliyle onarılıp teslim edildiğinde, ikame cihazımızı geri teslim alıyoruz. Eğlenceniz asla yarım kalmaz!
                   </p>
                 </div>
               </div>
-              <div className="mt-8 flex flex-wrap items-center gap-6 text-sm font-medium text-slate-500">
+              <div className="mt-8 flex flex-wrap items-center gap-y-4 gap-x-6 text-sm font-medium text-slate-600">
                 <div className="flex items-center gap-2">
-                  <Clock className="w-5 h-5 text-green-500" />
+                  <Clock className="w-5 h-5 text-green-500 shrink-0" />
                   <span>Saniyeler İçinde WhatsApp Üzerinden Fiyat Teklifi</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <ShieldCheck className="w-5 h-5 text-blue-500" />
+                  <ShieldCheck className="w-5 h-5 text-blue-500 shrink-0" />
                   <span>%100 Garantili Orijinal Onarım</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <BadgeCheck className="w-5 h-5 text-indigo-500 shrink-0" />
+                  <span>Orijinal Yedek Parça Kullanımı</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Banknote className="w-5 h-5 text-emerald-500 shrink-0" />
+                  <span>Şeffaf Fiyatlandırma – Sürpriz Ücret Yok</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MonitorPlay className="w-5 h-5 text-amber-500 shrink-0" />
+                  <span>Tamir Süresince Ücretsiz İkame TV</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Truck className="w-5 h-5 text-rose-500 shrink-0" />
+                  <span>İstanbul Geneli Hızlı Servis Hizmeti</span>
                 </div>
               </div>
             </div>
@@ -165,7 +197,7 @@ export default function Home() {
       {/* Customer Reviews Marquee */}
       <section className="bg-slate-900 py-10 overflow-hidden border-y border-slate-800">
         <div className="flex w-[200%] md:w-full overflow-hidden group/marquee">
-          <div className="flex animate-[marquee_120s_linear_infinite] group-hover/marquee:[animation-play-state:paused] whitespace-nowrap gap-6 px-3 items-stretch">
+          <div className="flex animate-[marquee_240s_linear_infinite] group-hover/marquee:[animation-play-state:paused] whitespace-nowrap gap-6 px-3 items-stretch">
             {reviews.map((review, i) => (
               <div key={`m1-${i}`} className="flex flex-col gap-3 bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:bg-slate-700/80 transition-colors cursor-default group w-[320px] shrink-0 whitespace-normal">
                 <div className="flex text-amber-400 text-lg">
@@ -180,7 +212,7 @@ export default function Home() {
             ))}
           </div>
           {/* Duplicate for seamless looping */}
-          <div className="flex animate-[marquee_120s_linear_infinite] group-hover/marquee:[animation-play-state:paused] whitespace-nowrap gap-6 px-3 items-stretch" aria-hidden="true">
+          <div className="flex animate-[marquee_240s_linear_infinite] group-hover/marquee:[animation-play-state:paused] whitespace-nowrap gap-6 px-3 items-stretch" aria-hidden="true">
             {reviews.map((review, i) => (
               <div key={`m2-${i}`} className="flex flex-col gap-3 bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700/50 hover:bg-slate-700/80 transition-colors cursor-default group w-[320px] shrink-0 whitespace-normal">
                 <div className="flex text-amber-400 text-lg">

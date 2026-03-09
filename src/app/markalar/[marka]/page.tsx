@@ -45,7 +45,7 @@ export default async function BrandPage({ params }: Props) {
                         <article className="prose prose-slate prose-lg max-w-none">
                             <h2 className="text-2xl font-bold text-slate-900 mb-4">{capitalizedMarka} TV Ekranları Neden Kırılır?</h2>
                             <p className="text-slate-600 mb-6 leading-relaxed">
-                                {capitalizedMarka} televizyon ekranları son derece gelişmiş teknolojilere (QLED, OLED, Mini LED vb.) sahip olsalar da dışarıdan gelen darbelere karşı oldukça hassastır. Merkezimize ulaşan vakalarda {capitalizedMarka} televizyonların en sık şu durumlarda hasar aldığı gözlemlenmiştir:
+                                {capitalizedMarka} televizyon ekranları son derece gelişmiş teknolojilere (QLED, Mini LED vb.) sahip olsalar da dışarıdan gelen darbelere karşı oldukça hassastır. Merkezimize ulaşan vakalarda {capitalizedMarka} televizyonların en sık şu durumlarda hasar aldığı gözlemlenmiştir:
                             </p>
                             <ul className="list-disc list-inside text-slate-600 mb-8 space-y-2">
                                 <li>Çocukların ekrana sert veya sivri bir cisimle vurması.</li>
@@ -117,7 +117,7 @@ export default async function BrandPage({ params }: Props) {
                                 <div className="p-6 border border-green-200 bg-green-50 rounded-2xl relative overflow-hidden group">
                                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-150 transition-transform"><ShieldCheck className="w-24 h-24 text-green-600" /></div>
                                     <h4 className="font-bold text-green-800 text-lg mb-2 relative z-10">Ekran Değişimi Kesinlikle Mantıklıdır</h4>
-                                    <p className="text-green-700/80 text-sm relative z-10">Eğer cihazınız üst ve orta segment (QLED, OLED, Smart 4K, 120Hz oyun destekli vb.) ise ve laboratuvarımızdan aldığınız orijinal panel değişim fiyatı, o cihazın bugün mağazadaki **yenisini almanın %60 - %70'ini geçmiyorsa** kesinlikle yaptırılmalıdır. Orijinal değişim sonrası {capitalizedMarka} TV'niz fabrika çıkış görüntü kalitesine eksiksiz döner.</p>
+                                    <p className="text-green-700/80 text-sm relative z-10">Eğer cihazınız üst ve orta segment (QLED, Smart 4K, 120Hz oyun destekli vb.) ise ve laboratuvarımızdan aldığınız orijinal panel değişim fiyatı, o cihazın bugün mağazadaki **yenisini almanın %60 - %70'ini geçmiyorsa** kesinlikle yaptırılmalıdır. Orijinal değişim sonrası {capitalizedMarka} TV'niz fabrika çıkış görüntü kalitesine eksiksiz döner.</p>
                                 </div>
                                 <div className="p-6 border border-red-200 bg-red-50 rounded-2xl relative overflow-hidden group">
                                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-150 transition-transform"><Settings className="w-24 h-24 text-red-600" /></div>
