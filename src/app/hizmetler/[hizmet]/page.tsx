@@ -132,6 +132,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
+export function generateStaticParams() {
+    return Object.keys(serviceData).map((hizmet) => ({
+        hizmet: hizmet,
+    }));
+}
+
 export default async function ServicePage({ params }: Props) {
     const { hizmet } = await params;
     const data = serviceData[hizmet] || {

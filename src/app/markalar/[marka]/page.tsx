@@ -16,6 +16,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
+export function generateStaticParams() {
+    const brands = [
+        'samsung', 'lg', 'philips', 'sony',
+        'vestel', 'beko', 'arcelik', 'tcl',
+        'toshiba', 'grundig', 'axen', 'panasonic'
+    ];
+
+    return brands.map((brand) => ({
+        marka: brand,
+    }));
+}
+
 export default async function BrandPage({ params }: Props) {
     const { marka } = await params;
     const decodedMarka = decodeURIComponent(marka);
