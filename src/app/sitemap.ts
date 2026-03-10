@@ -12,11 +12,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ];
 
     const services = [
-        'kirik-ekran-tamiri',
-        'tv-sivi-temasi-onarimi',
         'tv-panel-degisimi',
-        'dikey-ve-yatay-cizgiler',
         'led-bar-degisimi',
+        'led-ve-reflektor-degisim',
         'anakart-tamiri'
     ];
 

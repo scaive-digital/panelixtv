@@ -65,11 +65,9 @@ export default function Footer() {
                     <div>
                         <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-4">Hizmetlerimiz</h3>
                         <ul className="space-y-3">
-                            <li><Link href="/hizmetler/kirik-ekran-tamiri" className="text-slate-600 hover:text-brand-blue transition-colors">Kırık Ekran Tamiri</Link></li>
-                            <li><Link href="/hizmetler/tv-sivi-temasi-onarimi" className="text-slate-600 hover:text-brand-blue transition-colors">Sıvı Teması Onarımı</Link></li>
-                            <li><Link href="/hizmetler/tv-panel-degisimi" className="text-slate-600 hover:text-brand-blue transition-colors">Orijinal Panel Değişimi</Link></li>
-                            <li><Link href="/hizmetler/dikey-ve-yatay-cizgiler" className="text-slate-600 hover:text-brand-blue transition-colors">Dikey & Yatay Çizgi Tamiri</Link></li>
-                            <li><Link href="/hizmetler/led-bar-degisimi" className="text-slate-600 hover:text-brand-blue transition-colors">LED Bar Değişimi</Link></li>
+                            <li><Link href="/hizmetler/tv-panel-degisimi" className="text-slate-600 hover:text-brand-blue transition-colors">Panel (Ekran) Değişim</Link></li>
+                            <li><Link href="/hizmetler/led-bar-degisimi" className="text-slate-600 hover:text-brand-blue transition-colors">Led Bar Değişim</Link></li>
+                            <li><Link href="/hizmetler/led-ve-reflektor-degisim" className="text-slate-600 hover:text-brand-blue transition-colors">Led ve Reflektör Değişim</Link></li>
                             <li><Link href="/hizmetler/anakart-tamiri" className="text-slate-600 hover:text-brand-blue transition-colors">Anakart & Besleme Tamiri</Link></li>
                         </ul>
                     </div>

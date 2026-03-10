@@ -120,17 +120,17 @@ export default function Home() {
 
               {/* Quick Service Options */}
               <div className="flex flex-wrap gap-2 mb-8">
-                <Link href="/hizmetler/kirik-ekran-tamiri" className="text-xs md:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full transition-colors border border-slate-200 shadow-sm">
-                  Kırık Ekran Tamiri
-                </Link>
                 <Link href="/hizmetler/tv-panel-degisimi" className="text-xs md:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full transition-colors border border-slate-200 shadow-sm">
-                  Panel Değişimi
+                  Panel (Ekran) Değişim
                 </Link>
                 <Link href="/hizmetler/led-bar-degisimi" className="text-xs md:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full transition-colors border border-slate-200 shadow-sm">
-                  Led Değişim
+                  Led Bar Değişim
                 </Link>
-                <Link href="/hizmetler/led-bar-degisimi" className="text-xs md:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full transition-colors border border-slate-200 shadow-sm">
+                <Link href="/hizmetler/led-ve-reflektor-degisim" className="text-xs md:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full transition-colors border border-slate-200 shadow-sm">
                   Led ve Reflektör Değişim
+                </Link>
+                <Link href="/hizmetler/anakart-tamiri" className="text-xs md:text-sm font-medium bg-slate-100 text-slate-700 hover:bg-brand-blue hover:text-white px-3 py-1.5 rounded-full transition-colors border border-slate-200 shadow-sm">
+                  Anakart & Besleme Tamiri
                 </Link>
               </div>
 
@@ -239,73 +239,53 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Card 1 */}
-            <Link href="/hizmetler/kirik-ekran-tamiri" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
-              <div className="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mb-6">
-                <Zap className="w-7 h-7 text-red-500" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Kırık & Çatlak Ekranlar</h3>
-              <p className="text-slate-600 leading-relaxed">
-                Fiziksel darbe sonucu kırılan, çatlayan veya içten mürekkep dağılması yaşayan televizyon panelleri onarılamaz. Tamamen orijinal, kutulu sıfır panel değişimi ile sorunu kalıcı olarak çözüyoruz.
-              </p>
-            </Link>
-
-            {/* Card 2 */}
-            <Link href="/hizmetler/tv-sivi-temasi-onarimi" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
-              <div className="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6">
-                <Droplets className="w-7 h-7 text-brand-blue" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Sıvı Teması & Oksitlenme</h3>
-              <p className="text-slate-600 leading-relaxed">
-                Ekran temizliği sırasında panelin alt kısmına kaçan sıvı veya nem, COF flex kablolarını çürütür ve kısa devreye yol açar. Gelişmiş onarım veya tamamen yeni panel ile profesyonel bir yenileme sağlıyoruz.
-              </p>
-            </Link>
-
-            {/* Card 3 */}
-            <Link href="/hizmetler/dikey-ve-yatay-cizgiler" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
-              <div className="w-14 h-14 rounded-xl bg-purple-50 flex items-center justify-center mb-6">
-                <Grid className="w-7 h-7 text-purple-500" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Dikey & Yatay Çizgiler</h3>
-              <p className="text-slate-600 leading-relaxed">
-                Ekranda aniden beliren renkli dikey çizgiler, yatay bantlar veya görüntünün ikiye bölünmesi gibi matris arızaları için yüksek kesinlikte tespit yapıyor ve orijinal parça ile garantili değiştiriyoruz.
-              </p>
-            </Link>
-
-            {/* Card 4 - New */}
-            <Link href="/hizmetler/led-bar-degisimi" className="block relative overflow-hidden bg-gradient-to-br from-white to-blue-50/50 p-8 rounded-2xl shadow-sm border border-blue-100 hover:shadow-md hover:border-brand-blue/50 transition-all duration-300 group">
-              <div className="absolute top-0 right-0 bg-brand-blue text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">En İyi Özelliğimiz</div>
-              <div className="w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <MonitorPlay className="w-7 h-7 text-green-500" />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">LED Değişimi</h3>
-              <p className="text-slate-600 leading-relaxed">
-                Sadece panel değil, LED değişimi de atölyemizde özenle yapılmaktadır. LED reflektörü ile tamir edilmesi gereken cihazlar, bu profesyonel prosedüre uygun şekilde, <strong className="text-brand-blue">özel reflektör kullanılarak</strong> onarılmaktadır.
-              </p>
-            </Link>
-
-            {/* Card 5 - New */}
+            {/* Card 1 */}
             <Link href="/hizmetler/tv-panel-degisimi" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
               <div className="w-14 h-14 rounded-xl bg-orange-50 flex items-center justify-center mb-6">
                 <ShieldCheck className="w-7 h-7 text-orange-500" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Orijinal Panel Değişimi</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Panel (Ekran) Değişim</h3>
               <p className="text-slate-600 leading-relaxed">
-                Arızalı, ömrünü yitirmiş veya onarılamayacak kadar hasar görmüş televizyon ekranları için birebir orijinal ve garantili panel değişim hizmeti sunuyoruz.
+                Fiziksel darbe sonucu kırılan, çatlayan veya ömrünü yitirmiş televizyon ekranları için birebir orijinal ve garantili panel değişim hizmeti sunuyoruz.
               </p>
             </Link>
 
-            {/* Card 6 - New */}
+            {/* Card 2 */}
+            <Link href="/hizmetler/led-bar-degisimi" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-green-50 flex items-center justify-center mb-6 hover:scale-110 transition-transform">
+                <MonitorPlay className="w-7 h-7 text-green-500" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Led Bar Değişim</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Ses var görüntü yok efsanesinin bir numaralı sebebi olan LED patlaması arızasını, tamamen yeni ve orijinal aydınlatmalar takarak kalıcı yatırımlara çeviriyoruz.
+              </p>
+            </Link>
+
+            {/* Card 3 - New Highlight */}
+            <Link href="/hizmetler/led-ve-reflektor-degisim" className="block relative overflow-hidden bg-gradient-to-br from-white to-blue-50/50 p-8 rounded-2xl shadow-sm border border-blue-100 hover:shadow-md hover:border-brand-blue/50 transition-all duration-300 group">
+              <div className="absolute top-0 right-0 bg-brand-blue text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">En İyi Özelliğimiz</div>
+              <div className="w-14 h-14 rounded-xl bg-amber-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Zap className="w-7 h-7 text-amber-500" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Led ve Reflektör Değişim</h3>
+              <p className="text-slate-600 leading-relaxed">
+                LED barlar ile birlikte reflektörlerin de kontrol edilmesi ve gerekli durumlarda değiştirilmesi en doğru ve kalıcı çözümdür. Işığın ekrana eşit dağılmasını sağlar.
+              </p>
+            </Link>
+
+            {/* Card 4 */}
             <Link href="/hizmetler/anakart-tamiri" className="block bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-brand-blue/30 transition-all duration-300">
               <div className="w-14 h-14 rounded-xl bg-teal-50 flex items-center justify-center mb-6">
                 <Wrench className="w-7 h-7 text-teal-500" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-blue transition-colors">Anakart & Besleme Tamiri</h3>
               <p className="text-slate-600 leading-relaxed">
-                Televizyon hiç açılmıyor mu? Işık yanıp sönüyor mu? Güç kartı (besleme) ve anakart (mainboard) arızalarını laboratuvar ortamında mikroskobik düzeyde tamir ediyoruz.
+                Televizyon hiç açılmıyor mu? Işık yanıp sönüyor mu? Güç kartı (besleme) ve anakart arızalarını laboratuvar ortamında mikroskobik düzeyde tamir ediyoruz.
               </p>
             </Link>
+
           </div>
         </div>
       </section>

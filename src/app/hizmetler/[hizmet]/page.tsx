@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { PhoneCall, CheckCircle2, Wrench, Shield, ArrowRight, Clock } from "lucide-react";
+import { PhoneCall, CheckCircle2, Wrench, Shield, ArrowRight, Clock, Zap } from "lucide-react";
 import Link from "next/link";
 
 type Props = {
@@ -108,6 +108,82 @@ const serviceData: Record<string, { title: string, desc: string, icon: React.Rea
                 </p>
                 <p className="text-slate-600 mb-6 leading-relaxed">
                     Değişen döviz kurları ile anakart parça maliyetlerinin çok fazla artması sebebiyle; parçayı hemen değiştirmek çoğu kez tüketici bütçesini zorlar. Panelix’te ilk yaptığımız şey; kartlarınızı ithal diyagnostik uçlarla test edip; çip, transistör, bobin, kapasitör gibi anakart elemanlarında kısa devre (SMD) düzeyinde komponent bazlı onarım ihtimallerini araştırmaktır. Kart üzerindeki mikroskobik hasarlı eleman yüksek teknoloji havya setleri ile sökülüp yenisi lehimlenemez durumdaysa oş zaman tamamen uyumlu ve sıfır bir güç/anakart ile 1 yıllık garanti güvencesi ile değişim yapılır.
+                </p>
+            </>
+        )
+    },
+    "led-ve-reflektor-degisim": {
+        title: "TV LED ve Reflektör Değişimi",
+        desc: "Televizyonlarda zamanla ortaya çıkan ses var görüntü yok, ekranda beyaz ışık lekeleri veya karanlık alanlar oluşması gibi arızaların profesyonel reflektör kalibrasyonlu LED değişimi onarımı.",
+        icon: <Zap className="w-12 h-12 text-brand-blue" />,
+        seoArticle: (
+            <>
+                <p className="text-slate-600 mb-6 leading-relaxed">
+                    Televizyonlarda zamanla ortaya çıkan ses var görüntü yok, ekranda beyaz ışık lekeleri veya karanlık alanlar oluşması gibi arızaların en yaygın nedeni arka aydınlatma sisteminde bulunan LED barların ve reflektörlerin zarar görmesidir. Modern LED televizyonlarda ekranın arkasında bulunan LED aydınlatma sistemi, görüntünün ekrana eşit şekilde dağılmasını sağlar. Bu sistemde LED’lerin üzerinde bulunan küçük mercekler (reflektörler) ışığın panel üzerine homojen yayılmasını sağlar.
+                </p>
+                <p className="text-slate-600 mb-6 leading-relaxed">
+                    Zamanla LED’lerin ısınması ve uzun süreli kullanım nedeniyle reflektörler yerinden düşebilir, yanabilir veya deformasyona uğrayabilir. Bu durumda yalnızca LED değişimi yapmak çoğu zaman yeterli olmaz. Bu nedenle profesyonel onarımlarda LED barlar ile birlikte reflektörlerin de kontrol edilmesi ve gerekli durumlarda birlikte değiştirilmesi en doğru ve kalıcı çözümdür.
+                </p>
+
+                <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">LED ve Reflektör Arızasının Belirtileri</h3>
+                <p className="text-slate-600 mb-4">Televizyonunuzda aşağıdaki belirtiler görülüyorsa LED ve reflektör arızası oluşmuş olabilir:</p>
+                <ul className="list-disc pl-5 mb-6 text-slate-600 space-y-2">
+                    <li>Televizyonda ses var ancak görüntü yok</li>
+                    <li>Ekranda beyaz yuvarlak ışık lekeleri</li>
+                    <li>Görüntüde parlak noktalar veya ışık patlamaları</li>
+                    <li>Ekranın bazı bölgelerinde aşırı parlaklık</li>
+                    <li>Görüntüde karanlık bölgeler</li>
+                    <li>TV açıldıktan kısa süre sonra görüntünün kaybolması</li>
+                    <li>LED değişmesine rağmen ışığın ekrana eşit dağılmaması</li>
+                </ul>
+                <p className="text-slate-600 mb-6 leading-relaxed">
+                    Bu tür durumlarda yalnızca LED değişimi yapılması halinde kısa süre sonra tekrar arıza oluşabilir. Bu nedenle LED ve reflektörlerin birlikte değiştirilmesi televizyonunuzun daha uzun ömürlü çalışmasını sağlar.
+                </p>
+
+                <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">Sık Görüldüğü Televizyon Modelleri</h3>
+                <p className="text-slate-600 mb-4">Bazı televizyon serilerinde kullanılan ince kasa ve edge LED tasarımları nedeniyle reflektör arızaları daha sık görülebilmektedir. Başlıca modeller:</p>
+                <div className="grid md:grid-cols-3 gap-6 mb-6">
+                    <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <h4 className="font-bold text-slate-800 mb-3">Samsung</h4>
+                        <ul className="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                            <li>AU Serisi (AU7000, AU8000)</li>
+                            <li>TU Serisi (TU7000, TU8000)</li>
+                            <li>RU Serisi (RU7100, RU7400)</li>
+                            <li>NU Serisi (NU7100, NU7400)</li>
+                            <li>QLED Q60 – Q70 Serileri</li>
+                        </ul>
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <h4 className="font-bold text-slate-800 mb-3">LG</h4>
+                        <ul className="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                            <li>SM Serisi</li>
+                            <li>UM Serisi</li>
+                            <li>UJ Serisi</li>
+                            <li>UK Serisi</li>
+                        </ul>
+                    </div>
+                    <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <h4 className="font-bold text-slate-800 mb-3">Philips</h4>
+                        <ul className="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                            <li>50PUS ve 55PUS 6xxx Serileri</li>
+                            <li>7xxx Serileri</li>
+                        </ul>
+                    </div>
+                </div>
+                <p className="text-slate-600 mb-6 leading-relaxed">
+                    Bu markalarda kullanılan bazı panellerde reflektör düşmesi ve LED arızası zamanla daha sık görülebilmektedir.
+                </p>
+
+                <h3 className="text-2xl font-bold text-slate-800 mt-8 mb-4">Profesyonel LED ve Reflektör Değişimi</h3>
+                <p className="text-slate-600 mb-4">LED ve reflektör değişimi işlemi televizyon panelinin tamamen sökülmesini gerektiren hassas bir işlemdir. Bu nedenle doğru ekipman ve deneyim gerektirir. Servisimizde yapılan işlemlerde:</p>
+                <ul className="space-y-3 mb-6">
+                    <li className="flex items-center text-slate-600"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2 shrink-0" /> Arızalı LED barlar değiştirilir</li>
+                    <li className="flex items-center text-slate-600"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2 shrink-0" /> Reflektörler kontrol edilir ve gerekli ise yenilenir</li>
+                    <li className="flex items-center text-slate-600"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2 shrink-0" /> Difüzör tabakaları temizlenir</li>
+                    <li className="flex items-center text-slate-600"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2 shrink-0" /> Aydınlatma sistemi eşit şekilde kalibre edilir</li>
+                </ul>
+                <p className="text-slate-600 mb-6 leading-relaxed">
+                    Bu sayede televizyonunuzun görüntü kalitesi tekrar ilk günkü performansına yakın hale getirilir.
                 </p>
             </>
         )

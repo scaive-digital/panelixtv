@@ -19,11 +19,9 @@ export default function Navbar() {
   };
 
   const services = [
-    { name: "Kırık Ekran Tamiri", slug: "kirik-ekran-tamiri" },
-    { name: "Sıvı Teması Onarımı", slug: "tv-sivi-temasi-onarimi" },
-    { name: "Orijinal Panel Değişimi", slug: "tv-panel-degisimi" },
-    { name: "Dikey & Yatay Çizgi Tamiri", slug: "dikey-ve-yatay-cizgiler" },
-    { name: "LED Bar Değişimi", slug: "led-bar-degisimi" },
+    { name: "Panel (Ekran) Değişim", slug: "tv-panel-degisimi" },
+    { name: "Led Bar Değişim", slug: "led-bar-degisimi" },
+    { name: "Led ve Reflektör Değişim", slug: "led-ve-reflektor-degisim" },
     { name: "Anakart & Besleme Tamiri", slug: "anakart-tamiri" }
   ];
 
