@@ -27,6 +27,29 @@ export default function Navbar() {
 
   const brands = ['Samsung', 'LG', 'Philips', 'Sony', 'Vestel', 'Beko', 'Arçelik', 'TCL', 'Toshiba'];
 
+  const districts = [
+    { slug: "adalar", name: "Adalar" }, { slug: "arnavutkoy", name: "Arnavutköy" },
+    { slug: "atasehir", name: "Ataşehir" }, { slug: "avcilar", name: "Avcılar" },
+    { slug: "bagcilar", name: "Bağcılar" }, { slug: "bahcelievler", name: "Bahçelievler" },
+    { slug: "bakirkoy", name: "Bakırköy" }, { slug: "basaksehir", name: "Başakşehir" },
+    { slug: "bayrampasa", name: "Bayrampaşa" }, { slug: "besiktas", name: "Beşiktaş" },
+    { slug: "beykoz", name: "Beykoz" }, { slug: "beylikduzu", name: "Beylikdüzü" },
+    { slug: "beyoglu", name: "Beyoğlu" }, { slug: "buyukcekmece", name: "Büyükçekmece" },
+    { slug: "catalca", name: "Çatalca" }, { slug: "cekmekoy", name: "Çekmeköy" },
+    { slug: "esenler", name: "Esenler" }, { slug: "esenyurt", name: "Esenyurt" },
+    { slug: "eyupsultan", name: "Eyüpsultan" }, { slug: "fatih", name: "Fatih" },
+    { slug: "gaziosmanpasa", name: "Gaziosmanpaşa" }, { slug: "gungoren", name: "Güngören" },
+    { slug: "kadikoy", name: "Kadıköy" }, { slug: "kagithane", name: "Kağıthane" },
+    { slug: "kartal", name: "Kartal" }, { slug: "kucukcekmece", name: "Küçükçekmece" },
+    { slug: "maltepe", name: "Maltepe" }, { slug: "pendik", name: "Pendik" },
+    { slug: "sancaktepe", name: "Sancaktepe" }, { slug: "sariyer", name: "Sarıyer" },
+    { slug: "silivri", name: "Silivri" }, { slug: "sultanbeyli", name: "Sultanbeyli" },
+    { slug: "sultangazi", name: "Sultangazi" }, { slug: "sile", name: "Şile" },
+    { slug: "sisli", name: "Şişli" }, { slug: "tuzla", name: "Tuzla" },
+    { slug: "umraniye", name: "Ümraniye" }, { slug: "uskudar", name: "Üsküdar" },
+    { slug: "zeytinburnu", name: "Zeytinburnu" }
+  ];
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md">
       <div className="container mx-auto px-4 md:px-8 h-20 flex items-center justify-between relative">
@@ -83,6 +106,26 @@ export default function Navbar() {
                     className="px-4 py-2 text-sm text-slate-600 hover:text-brand-blue hover:bg-slate-50 rounded-lg transition-colors"
                   >
                     {brand}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Districts Navigation */}
+          <div className="relative group py-2">
+            <span className="cursor-pointer text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors flex items-center gap-1">
+              Bölgelerimiz
+            </span>
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[600px] bg-white rounded-xl shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 p-4">
+              <div className="grid grid-cols-4 gap-2">
+                {districts.map((district) => (
+                  <Link
+                    key={district.slug}
+                    href={`/istanbul/${district.slug}`}
+                    className="truncate px-2 py-1.5 text-xs text-slate-600 hover:text-brand-blue hover:bg-slate-50 rounded-md transition-colors"
+                  >
+                    {district.name}
                   </Link>
                 ))}
               </div>
@@ -194,6 +237,31 @@ export default function Navbar() {
                   {brand}
                 </Link>
               ))}
+            </div>
+          </div>
+
+          {/* Mobile Districts Dropdown */}
+          <div className="border-b border-slate-100">
+            <button
+              className="w-full flex items-center justify-between py-3 px-4 text-slate-800 font-semibold hover:bg-slate-50 transition-colors"
+              onClick={() => toggleDropdown('districts')}
+            >
+              Bölgelerimiz
+              <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeMobileDropdown === 'districts' ? 'rotate-180' : ''}`} />
+            </button>
+            <div className={`flex flex-col bg-slate-50 overflow-hidden transition-all duration-300 ${activeMobileDropdown === 'districts' ? 'max-h-[1200px]' : 'max-h-0'}`}>
+               <div className="grid grid-cols-2 gap-x-2 gap-y-1 py-3 px-8">
+                {districts.map((district) => (
+                    <Link
+                    key={district.slug}
+                    href={`/istanbul/${district.slug}`}
+                    className="py-2 text-sm text-slate-600 hover:text-brand-blue truncate"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                    {district.name}
+                    </Link>
+                ))}
+              </div>
             </div>
           </div>
 
