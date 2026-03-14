@@ -18,6 +18,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         'anakart-tamiri'
     ];
 
+    const districts = [
+        "adalar", "arnavutkoy", "atasehir", "avcilar", "bagcilar",
+        "bahcelievler", "bakirkoy", "basaksehir", "bayrampasa", "besiktas",
+        "beykoz", "beylikduzu", "beyoglu", "buyukcekmece", "catalca",
+        "cekmekoy", "esenler", "esenyurt", "eyupsultan", "fatih",
+        "gaziosmanpasa", "gungoren", "kadikoy", "kagithane", "kartal",
+        "kucukcekmece", "maltepe", "pendik", "sancaktepe", "sariyer",
+        "silivri", "sultanbeyli", "sultangazi", "sile", "sisli",
+        "tuzla", "umraniye", "uskudar", "zeytinburnu"
+    ];
+
     // Map core routes
     const coreRoutes = [
         {
@@ -50,5 +61,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
     }));
 
-    return [...coreRoutes, ...brandRoutes, ...serviceRoutes];
+    // Map dynamic district pages
+    const districtRoutes = districts.map((district) => ({
+        url: `${baseUrl}/istanbul/${district}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+    }));
+
+    return [...coreRoutes, ...brandRoutes, ...serviceRoutes, ...districtRoutes];
 }
