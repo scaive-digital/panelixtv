@@ -112,24 +112,11 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Desktop Districts Navigation */}
+          {/* Desktop Districts Navigation (Link directly to a main regions page instead of chaotic 39 item dropdown) */}
           <div className="relative group py-2">
-            <span className="cursor-pointer text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors flex items-center gap-1">
+            <Link href="/hizmet-bolgelerimiz" className="cursor-pointer text-base font-semibold text-slate-700 hover:text-brand-blue transition-colors flex items-center gap-1">
               Bölgelerimiz
-            </span>
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[600px] bg-white rounded-xl shadow-lg border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 p-4">
-              <div className="grid grid-cols-4 gap-2">
-                {districts.map((district) => (
-                  <Link
-                    key={district.slug}
-                    href={`/istanbul/${district.slug}`}
-                    className="truncate px-2 py-1.5 text-xs text-slate-600 hover:text-brand-blue hover:bg-slate-50 rounded-md transition-colors"
-                  >
-                    {district.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
+            </Link>
           </div>
 
           <div className="relative group py-2">
@@ -240,30 +227,13 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Mobile Districts Dropdown */}
-          <div className="border-b border-slate-100">
-            <button
-              className="w-full flex items-center justify-between py-3 px-4 text-slate-800 font-semibold hover:bg-slate-50 transition-colors"
-              onClick={() => toggleDropdown('districts')}
-            >
-              Bölgelerimiz
-              <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeMobileDropdown === 'districts' ? 'rotate-180' : ''}`} />
-            </button>
-            <div className={`flex flex-col bg-slate-50 overflow-hidden transition-all duration-300 ${activeMobileDropdown === 'districts' ? 'max-h-[1200px]' : 'max-h-0'}`}>
-               <div className="grid grid-cols-2 gap-x-2 gap-y-1 py-3 px-8">
-                {districts.map((district) => (
-                    <Link
-                    key={district.slug}
-                    href={`/istanbul/${district.slug}`}
-                    className="py-2 text-sm text-slate-600 hover:text-brand-blue truncate"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                    {district.name}
-                    </Link>
-                ))}
-              </div>
-            </div>
-          </div>
+          <Link
+            href="/hizmet-bolgelerimiz"
+            className="py-3 px-4 text-slate-800 font-semibold border-b border-slate-100 hover:bg-slate-50 transition-colors block"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Bölgelerimiz
+          </Link>
 
           {/* Mobile Kurumsal Dropdown */}
           <div className="border-b border-slate-100">
