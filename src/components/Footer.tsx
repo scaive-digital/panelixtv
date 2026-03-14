@@ -88,7 +88,40 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-200 pt-4 mt-4 text-sm text-slate-500">
+                {/* Hizmet Bölgeleri (SEO Links) */}
+                <div className="border-t border-gray-200 pt-8 mt-8">
+                    <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-4 text-center">İstanbul TV Tamiri Hizmet Bölgelerimiz</h3>
+                    <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
+                        {[
+                            { slug: "adalar", name: "Adalar" }, { slug: "arnavutkoy", name: "Arnavutköy" },
+                            { slug: "atasehir", name: "Ataşehir" }, { slug: "avcilar", name: "Avcılar" },
+                            { slug: "bagcilar", name: "Bağcılar" }, { slug: "bahcelievler", name: "Bahçelievler" },
+                            { slug: "bakirkoy", name: "Bakırköy" }, { slug: "basaksehir", name: "Başakşehir" },
+                            { slug: "bayrampasa", name: "Bayrampaşa" }, { slug: "besiktas", name: "Beşiktaş" },
+                            { slug: "beykoz", name: "Beykoz" }, { slug: "beylikduzu", name: "Beylikdüzü" },
+                            { slug: "beyoglu", name: "Beyoğlu" }, { slug: "buyukcekmece", name: "Büyükçekmece" },
+                            { slug: "catalca", name: "Çatalca" }, { slug: "cekmekoy", name: "Çekmeköy" },
+                            { slug: "esenler", name: "Esenler" }, { slug: "esenyurt", name: "Esenyurt" },
+                            { slug: "eyupsultan", name: "Eyüpsultan" }, { slug: "fatih", name: "Fatih" },
+                            { slug: "gaziosmanpasa", name: "Gaziosmanpaşa" }, { slug: "gungoren", name: "Güngören" },
+                            { slug: "kadikoy", name: "Kadıköy" }, { slug: "kagithane", name: "Kağıthane" },
+                            { slug: "kartal", name: "Kartal" }, { slug: "kucukcekmece", name: "Küçükçekmece" },
+                            { slug: "maltepe", name: "Maltepe" }, { slug: "pendik", name: "Pendik" },
+                            { slug: "sancaktepe", name: "Sancaktepe" }, { slug: "sariyer", name: "Sarıyer" },
+                            { slug: "silivri", name: "Silivri" }, { slug: "sultanbeyli", name: "Sultanbeyli" },
+                            { slug: "sultangazi", name: "Sultangazi" }, { slug: "sile", name: "Şile" },
+                            { slug: "sisli", name: "Şişli" }, { slug: "tuzla", name: "Tuzla" },
+                            { slug: "umraniye", name: "Ümraniye" }, { slug: "uskudar", name: "Üsküdar" },
+                            { slug: "zeytinburnu", name: "Zeytinburnu" }
+                        ].map((district) => (
+                            <Link key={district.slug} href={`/istanbul/${district.slug}`} className="text-xs text-slate-500 hover:text-brand-blue transition-colors">
+                                {district.name} TV Tamiri
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="border-t border-gray-200 pt-4 mt-6 text-sm text-slate-500">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-3 mb-3">
                         <div className="flex flex-col md:flex-row items-center gap-4">
                             <p>© {new Date().getFullYear()} Panelix. Tüm hakları saklıdır.</p>
